@@ -68,6 +68,7 @@ content.actualites.forEach((message) => {
   q("#announcement-list").append(element);
 });
 
+
 setText("#hero-eyebrow", content.accueil.surtitre);
 setText("#hero-title", content.accueil.titre);
 setText("#hero-highlight", content.accueil.miseEnAvant);
