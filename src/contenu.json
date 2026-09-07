@@ -1,0 +1,166 @@
+{
+  "meta": {
+    "title": "Ring Athlétique du Petit Bard",
+    "description": "Ring Athlétique du Petit Bard : boxe anglaise à Montpellier depuis 1999, horaires, accès et inscriptions."
+  },
+  "accessibilite": {
+    "accueil": "Accueil",
+    "navigationPrincipale": "Navigation principale",
+    "reseauxSociaux": "Réseaux sociaux",
+    "instagram": "Instagram du club",
+    "facebook": "Facebook du club",
+    "informationsClub": "Informations du club",
+    "accesRapides": "Accès rapides",
+    "tarifs": "Tarifs",
+    "carte": "Localisation de la salle de boxe du Petit Bard",
+    "logo": "Logo du Ring Athlétique du Petit Bard"
+  },
+  "identite": {
+    "nom": "Ring Athlétique du Petit Bard",
+    "nomCourtLigne1": "Ring Athlétique",
+    "nomCourtLigne2": "du Petit Bard"
+  },
+  "menu": {
+    "horaires": "Horaires",
+    "acces": "Accès",
+    "contact": "Contact",
+    "inscription": "S’inscrire"
+  },
+  "actualitesTitre": "Infos du club",
+  "actualites": [
+    "INFOS",
+    "Reprise adultes : 1er septembre",
+    "Reprise ados : 15 septembre"
+  ],
+  "accueil": {
+    "surtitre": "R.A.P.B · Boxe anglaise · Montpellier",
+    "titre": "La boxe au Petit Bard",
+    "miseEnAvant": "depuis 1999",
+    "description": "Boxe anglaise pour tous, encadrée par des entraîneurs diplômés, dans un cadre exigeant et bienveillant.",
+    "boutonHoraires": "Voir les horaires",
+    "boutonInscription": "S’inscrire",
+    "publics": "Ados 12–15 ans · Adultes dès 16 ans"
+  },
+  "accesRapides": {
+    "horaires": {
+      "titre": "Quand venir ?",
+      "description": "Consulter les créneaux"
+    },
+    "inscription": {
+      "titre": "Comment s’inscrire ?",
+      "description": "Tarifs et inscription en ligne"
+    },
+    "acces": {
+      "titre": "Comment venir ?",
+      "description": "Adresse et itinéraire"
+    }
+  },
+  "sectionHoraires": {
+    "surtitre": "Les entraînements",
+    "titre": "Horaires",
+    "description": "Des créneaux pour les adolescents, les adultes et les compétiteurs.",
+    "colonnePublic": "Public",
+    "colonneJour": "Jour",
+    "colonneHoraire": "Horaire"
+  },
+  "horaires": [
+    {
+      "public": "Compétiteurs",
+      "details": "Créneau dédié aux compétiteurs",
+      "jour": "Lundi",
+      "heure": "18h00 — 20h00"
+    },
+    {
+      "public": "Adultes",
+      "details": "Tous niveaux",
+      "jour": "Mardi",
+      "heure": "19h00 — 21h00"
+    },
+    {
+      "public": "Ados",
+      "details": "12–15 ans · Tous niveaux",
+      "jour": "Mercredi",
+      "heure": "16h00 — 17h30"
+    },
+    {
+      "public": "Adultes",
+      "details": "Tous niveaux",
+      "jour": "Jeudi",
+      "heure": "19h00 — 21h00"
+    },
+    {
+      "public": "Ados",
+      "details": "12–15 ans · Tous niveaux",
+      "jour": "Vendredi",
+      "heure": "19h30 — 20h30"
+    },
+    {
+      "public": "Adultes",
+      "details": "Tous niveaux",
+      "jour": "Vendredi",
+      "heure": "19h00 — 21h00"
+    }
+  ],
+  "sectionInscription": {
+    "surtitre": "Rejoindre le club",
+    "titre": "Inscriptions",
+    "description": "Créez votre dossier directement sur Sportyneo. Pour toute question avant de vous inscrire,",
+    "lienContact": "consultez la rubrique Contact",
+    "bouton": "S’inscrire en ligne"
+  },
+  "tarifs": [
+    {
+      "public": "Ados",
+      "prix": "150 €",
+      "details": "12–15 ans"
+    },
+    {
+      "public": "Adultes",
+      "prix": "200 €",
+      "details": "16 ans et plus"
+    },
+    {
+      "public": "Compétiteurs",
+      "prix": "270 €",
+      "details": "Première inscription"
+    }
+  ],
+  "sectionAcces": {
+    "surtitre": "Nous trouver",
+    "titre": "Accès",
+    "adresseLibelle": "Adresse",
+    "adresse": [
+      "Salle de boxe du Petit Bard",
+      "1184 rue Paul Rimbaud",
+      "34080 Montpellier"
+    ],
+    "transport": "Tram ligne 3 · arrêt Pergola à 200 m",
+    "bouton": "Ouvrir l’itinéraire"
+  },
+  "piedDePage": {
+    "contactTitre": "Nous contacter",
+    "contactNom": "Jean-Marc Casanova",
+    "instagramMessage": "Nous contacter sur Instagram ↗",
+    "facebookMessage": "Nous contacter sur Facebook/Messanger ↗",
+    "suivreTitre": "Suivez le club",
+    "instagram": "Instagram ↗",
+    "facebook": "Facebook ↗"
+  },
+  "inscription": "https://front.sportyneo.com/clubs/ring-athletique-du-petit-bard",
+  "maps": "https://maps.app.goo.gl/mC5ELNz9qdbbKYxu5",
+  "contact": {
+    "email": "rapb.boxe@gmail.com",
+    "telephone": "06 80 74 85 46",
+    "instagram": "https://www.instagram.com/ring_athletique_petitbard/",
+    "instagramMessage": "https://ig.me/m/ring_athletique_petitbard",
+    "facebook": "https://www.facebook.com/RingAthletiquePetitBard/",
+    "facebookMessage": "https://m.me/RingAthletiquePetitBard"
+  },
+  "documents": {
+    "titre": "Documents",
+    "charte": {
+      "libelle": "Charte du club (PDF) ↗",
+      "url": "https://drive.google.com/file/d/1VtE3EQurgdf7jZKD5g-QCMY61XdRoH83/view?usp=sharing"
+    }
+  }
+}

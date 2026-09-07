@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <title></title>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#accueil" id="home-link">
+        <img class="brand-logo" src="/logo-rapb.png" alt="" id="brand-logo" />
+        <span class="brand-name" id="brand-name"></span>
+      </a>
+      <div class="header-actions">
+        <nav id="main-navigation">
+          <a href="#horaires" id="nav-schedule"></a>
+          <a href="#acces" id="nav-access"></a>
+          <a href="#contact" id="nav-contact"></a>
+          <a class="nav-cta" href="#inscription" id="nav-registration"></a>
+        </nav>
+        <div class="social-links" id="social-navigation">
+          <a id="instagram-top" target="_blank" rel="noreferrer">
+            <img src="https://cdn.simpleicons.org/instagram/ffffff" alt="" />
+          </a>
+          <a id="facebook-top" target="_blank" rel="noreferrer">
+            <img src="https://cdn.simpleicons.org/facebook/ffffff" alt="" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <aside class="announcement-bar" id="announcements">
+      <strong id="announcement-title"></strong>
+      <div id="announcement-list"></div>
+    </aside>
+    <main>
+      <section class="hero" id="accueil">
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow">
+            <span class="eyebrow-mark" aria-hidden="true"></span>
+            <span id="hero-eyebrow"></span>
+          </p>
+          <h1>
+            <span id="hero-title"></span><br /><em id="hero-highlight"></em>
+          </h1>
+          <p class="hero-copy" id="hero-description"></p>
+          <div class="hero-actions">
+            <a class="button button-red" href="#horaires">
+              <span id="hero-schedule-button"></span>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a
+              class="button button-ghost"
+              href="#inscription"
+              id="hero-registration-button"
+            ></a>
+          </div>
+          <p class="mobile-audiences" id="hero-audiences"></p>
+        </div>
+      </section>
+      <section class="quick" id="quick-links">
+        <a href="#horaires">
+          <span>01</span>
+          <strong id="quick-schedule-title"></strong>
+          <small id="quick-schedule-description"></small>
+          <span aria-hidden="true">↗</span>
+        </a>
+        <a href="#inscription">
+          <span>02</span>
+          <strong id="quick-registration-title"></strong>
+          <small id="quick-registration-description"></small>
+          <span aria-hidden="true">↗</span>
+        </a>
+        <a href="#acces">
+          <span>03</span>
+          <strong id="quick-access-title"></strong>
+          <small id="quick-access-description"></small>
+          <span aria-hidden="true">↗</span>
+        </a>
+      </section>
+      <section class="section schedule" id="horaires">
+        <div class="section-heading">
+          <p class="kicker" id="schedule-kicker"></p>
+          <h2 id="schedule-title"></h2>
+          <p id="schedule-description"></p>
+        </div>
+        <div class="schedule-card" id="schedule-list">
+          <div class="schedule-row schedule-head">
+            <span id="schedule-public-label"></span>
+            <span id="schedule-day-label"></span>
+            <span id="schedule-time-label"></span>
+          </div>
+        </div>
+      </section>
+      <section class="section registration" id="inscription">
+        <div class="registration-copy">
+          <p class="kicker" id="registration-kicker"></p>
+          <h2 id="registration-title"></h2>
+          <p>
+            <span id="registration-description"></span>
+            <a
+              class="contact-link"
+              href="#contact"
+              id="registration-contact-link"
+            ></a
+            >.
+          </p>
+          <a
+            class="button button-light"
+            id="registration-link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span id="registration-button"></span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <div class="pricing" id="pricing"></div>
+      </section>
+      <section class="section access" id="acces">
+        <div class="map-card">
+          <iframe
+            class="map-frame"
+            id="map-frame"
+            src="https://www.google.com/maps?q=Salle+de+boxe+du+Petit+Bard,+1184+rue+Paul+Rimbaud,+34080+Montpellier&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="access-copy">
+          <p class="kicker" id="access-kicker"></p>
+          <h2 id="access-title"></h2>
+          <div class="address">
+            <span id="address-label"></span>
+            <strong id="address"></strong>
+            <small id="transport"></small>
+          </div>
+          <a
+            class="button button-dark"
+            id="maps-link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span id="maps-button"></span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer id="contact">
+      <div class="footer-brand">
+        <img class="footer-logo" src="/logo-rapb.png" alt="" id="footer-logo" />
+      </div>
+      <div>
+        <span id="contact-title"></span>
+        <strong id="contact-name"></strong>
+        <a id="email-link"></a>
+        <a id="phone-link"></a>
+        <a id="instagram-message-link" target="_blank" rel="noreferrer"></a>
+        <a id="facebook-message-link" target="_blank" rel="noreferrer"></a>
+      </div>
+      <div>
+        <span id="follow-title"></span>
+        <a id="instagram-link" target="_blank" rel="noreferrer"></a>
+        <a id="facebook-link" target="_blank" rel="noreferrer"></a>
+      </div>
+      <div>
+        <span id="documents-title"></span>
+        <a id="charter-link" target="_blank" rel="noreferrer"></a>
+      </div>
+      <p>© <span id="year"></span> <span id="copyright-name"></span></p>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
