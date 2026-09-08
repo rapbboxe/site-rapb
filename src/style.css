@@ -37,6 +37,12 @@ a {
   align-items: center;
   gap: 14px;
 }
+.topbar > .brand {
+  position: relative;
+  min-height: 80px;
+  padding-left: 156px;
+  flex-shrink: 0;
+}
 .brand-mark {
   width: 52px;
   height: 52px;
@@ -595,8 +601,11 @@ footer p {
   height: 104px;
 }
 .brand-logo {
-  width: 80px;
-  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px;
+  height: 140px;
   object-fit: contain;
   background: #fff;
   border-radius: 50%;
@@ -627,7 +636,7 @@ footer p {
 }
 .announcement-bar {
   min-height: 52px;
-  padding: 10px clamp(20px, 5vw, 76px);
+  padding: 10px calc(clamp(20px, 5vw, 76px) + 156px) 10px clamp(20px, 5vw, 76px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -711,9 +720,14 @@ footer p {
   .topbar {
     height: 82px;
   }
+  .topbar > .brand {
+    width: 100px;
+    min-height: 60px;
+    padding-left: 0;
+  }
   .brand-logo {
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
   }
   .header-actions {
     gap: 12px;
