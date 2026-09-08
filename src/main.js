@@ -1,4 +1,5 @@
 import './style.css';
+import './partners.css';
 import content from './contenu.json';
 
 const q = (selector) => document.querySelector(selector);
@@ -151,3 +152,42 @@ q('#facebook-message-link').href = content.contact.facebookMessage;
 q('#charter-link').href = content.documents.charte.url;
 
 q('#year').textContent = new Date().getFullYear();
+
+const partnersSection = q('#partenaires');
+const partners = content.partenaires;
+
+if (!partners?.elements?.length) {
+  partnersSection.hidden = true;
+} else {
+  setText('#partners-title', partners.titre);
+
+  partners.elements.forEach((partner) => {
+    const item = document.createElement('li');
+    const link = document.createElement('a');
+
+    link.className = 'partner-link';
+    link.href = partner.url;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+
+    if (partner.logo) {
+      const logo = document.createElement('img');
+      logo.className = 'partner-logo';
+      logo.alt = partner.nom;
+      logo.width = 180;
+      logo.height = 90;
+      logo.loading = 'lazy';
+      logo.decoding = 'async';
+
+      logo.addEventListener('error', () => {
+        logo.remove();
+      });
+      const siteBaseUrl = new URL(import.meta.env.BASE_URL, document.baseURI);
+      logo.src = new URL(partner.logo, siteBaseUrl).href;
+      link.append(logo);
+    }
+
+    item.append(link);
+    q('#partners-list').append(item);
+  });
+}
