@@ -4,11 +4,22 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "test": "lint-staged",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "husky"
   },
   "devDependencies": {
+    "eslint-config-prettier": "^10.1.8",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "prettier": "^3.9.6",
     "vite": "^7.1.5"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx,json,html,css}": [
+      "prettier --write"
+    ]
   }
 }
