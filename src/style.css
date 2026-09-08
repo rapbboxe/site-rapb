@@ -129,6 +129,7 @@ h1 {
   max-width: 1000px;
 }
 h1 em {
+  display: inline-block;
   color: transparent;
   -webkit-text-stroke: 1.5px white;
   font-style: normal;
@@ -499,6 +500,10 @@ footer p {
   h1 {
     font-size: clamp(48px, 15vw, 78px);
   }
+  h1 em {
+    font-weight: 900;
+    letter-spacing: -0.035em;
+  }
   .hero-copy {
     max-width: 90%;
   }
@@ -580,6 +585,9 @@ footer p {
   }
   .eyebrow {
     font-size: 10px;
+  }
+  h1 {
+    font-size: clamp(44px, 14vw, 60px);
   }
   .section {
     padding-left: 18px;
