@@ -501,7 +501,8 @@ footer p {
     font-size: clamp(48px, 15vw, 78px);
   }
   h1 em {
-    font-weight: 900;
+    font-weight: 700;
+    font-synthesis: none;
     letter-spacing: -0.035em;
   }
   .hero-copy {
