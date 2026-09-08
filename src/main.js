@@ -96,8 +96,7 @@ content.horaires.forEach((item) => {
 
 setText('#registration-kicker', content.sectionInscription.surtitre);
 setText('#registration-title', content.sectionInscription.titre);
-setText('#registration-description', content.sectionInscription.description + ' ');
-setText('#registration-contact-link', content.sectionInscription.lienContact);
+setText('#registration-description', content.sectionInscription.description);
 setText('#registration-button', content.sectionInscription.bouton);
 
 content.tarifs.forEach((item) => {
@@ -132,7 +131,7 @@ setText('#instagram-link', content.piedDePage.instagram);
 setText('#facebook-link', content.piedDePage.facebook);
 setText('#copyright-name', content.identite.nom);
 
-q('#registration-link').href = content.inscription;
+q('#registration-link').href = content.guideInscription.lienAccueil.url;
 q('#maps-link').href = content.maps;
 
 const email = q('#email-link');
@@ -152,7 +151,3 @@ q('#facebook-message-link').href = content.contact.facebookMessage;
 q('#charter-link').href = content.documents.charte.url;
 
 q('#year').textContent = new Date().getFullYear();
-
-const guideLink = q('#registration-guide-link');
-guideLink.textContent = content.guideInscription.lienAccueil.libelle;
-guideLink.href = content.guideInscription.lienAccueil.url;

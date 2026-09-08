@@ -100,9 +100,8 @@
   "sectionInscription": {
     "surtitre": "Rejoindre le club",
     "titre": "Inscriptions",
-    "description": "Créez votre dossier directement sur Sportyneo. Pour toute question avant de vous inscrire,",
-    "lienContact": "consultez la rubrique Contact",
-    "bouton": "S’inscrire en ligne"
+    "description": "L’inscription comprend l’adhésion au club et la demande de licence fédérale. Consultez le guide pour suivre toutes les étapes.",
+    "bouton": "S’inscrire"
   },
   "tarifs": [
     {
