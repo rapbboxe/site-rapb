@@ -27,11 +27,7 @@
     "inscription": "S’inscrire"
   },
   "actualitesTitre": "Infos du club",
-  "actualites": [
-    "INFOS",
-    "Reprise adultes : 1er septembre",
-    "Reprise ados : 15 septembre"
-  ],
+  "actualites": ["INFOS", "Reprise adultes : 1er septembre", "Reprise ados : 15 septembre"],
   "accueil": {
     "surtitre": "R.A.P.B · Boxe anglaise · Montpellier",
     "titre": "La boxe au Petit Bard",
@@ -129,11 +125,7 @@
     "surtitre": "Nous trouver",
     "titre": "Accès",
     "adresseLibelle": "Adresse",
-    "adresse": [
-      "Salle de boxe du Petit Bard",
-      "1184 rue Paul Rimbaud",
-      "34080 Montpellier"
-    ],
+    "adresse": ["Salle de boxe du Petit Bard", "1184 rue Paul Rimbaud", "34080 Montpellier"],
     "transport": "Tram ligne 3 · arrêt Pergola à 200 m",
     "bouton": "Ouvrir l’itinéraire"
   },
@@ -162,5 +154,143 @@
       "libelle": "Charte du club (PDF) ↗",
       "url": "https://drive.google.com/file/d/1VtE3EQurgdf7jZKD5g-QCMY61XdRoH83/view?usp=sharing"
     }
+  },
+  "guideInscription": {
+    "meta": {
+      "titre": "Guide d’inscription – Ring Athlétique du Petit Bard",
+      "description": "Inscription au RAPB : cotisation, licence fédérale, documents et équipement pour les adultes et les adolescents."
+    },
+    "lienAccueil": {
+      "libelle": "Consulter le guide d’inscription",
+      "url": "./guide-inscription.html"
+    },
+    "retour": {
+      "libelle": "Retour au site",
+      "url": "./index.html"
+    },
+    "contact": {
+      "libelle": "Contacter le club",
+      "url": "./index.html#contact"
+    },
+    "titre": "Guide d’inscription",
+    "saison": "Saison 2026–2027",
+    "introduction": "Les démarches pour rejoindre le Ring Athlétique du Petit Bard, préparer votre dossier et venir vous entraîner.",
+    "essai": "Les cours d’essai sont limités à une semaine.",
+    "sommaire": "Dans ce guide",
+    "tarifsTitre": "La cotisation",
+    "tarifsNote": "La licence fédérale est comprise dans la cotisation. Le tarif compétiteur comprend la tenue de compétition du club.",
+    "sections": [
+      {
+        "id": "adultes",
+        "titre": "Adultes : les trois étapes",
+        "introduction": "Dès 16 ans, en loisir ou en compétition.",
+        "etapes": [
+          {
+            "titre": "Créer votre dossier sur Sportyneo",
+            "paragraphes": [
+              "L’inscription sur Sportyneo est obligatoire pour les adultes, même si vous choisissez de régler votre cotisation au club."
+            ],
+            "liens": [
+              {
+                "libelle": "M’inscrire sur Sportyneo",
+                "reference": "inscription"
+              }
+            ]
+          },
+          {
+            "titre": "Régler la cotisation",
+            "paragraphes": [
+              "Réglez votre cotisation selon le mode de paiement choisi. La licence fédérale est incluse dans ce montant."
+            ],
+            "liste": [
+              "Par carte bancaire sur Sportyneo : en 1, 4 ou 10 fois.",
+              "En espèces ou par chèque au club : en une seule fois."
+            ],
+            "note": "Sportyneo peut proposer une assurance annulation facultative. Consultez les conditions et les justificatifs demandés avant de la souscrire."
+          },
+          {
+            "titre": "Demander votre licence fédérale",
+            "paragraphes": [
+              "Une fois la cotisation réglée, effectuez vous-même votre demande de licence en ligne.",
+              "Préparez le certificat correspondant à votre pratique à l’aide des documents ci-dessous. Pour les compétiteurs, consultez la liste des examens demandés par la FFBoxe.",
+              "Créez votre compte sur l’espace fédéral, ou connectez-vous à votre compte existant, puis remplissez la demande de licence."
+            ],
+            "liens": [
+              {
+                "libelle": "Ouvrir mon espace FFBoxe",
+                "url": "https://monespace.ffboxe.com/"
+              },
+              {
+                "libelle": "Faire ma demande de licence",
+                "url": "https://monespace.ffboxe.com/licence/saisie/etape-1"
+              },
+              {
+                "libelle": "Consulter le guide de saisie",
+                "url": "https://docs.google.com/document/d/1HLZJTqWBR4oLavWzYFv7AnDnaoQuF7ZsOZojk_E5dKE/edit?usp=sharing"
+              }
+            ],
+            "note": "Vous n’avez rien à régler sur le portail fédéral : ne tenez pas compte du prix affiché. Le club validera la demande une fois votre cotisation réglée."
+          }
+        ]
+      },
+      {
+        "id": "ados",
+        "titre": "Ados : de 12 à 15 ans",
+        "paragraphes": [
+          "L’inscription se fait avec la fiche d’inscription boxe enfant, sans inscription en ligne. Téléchargez la fiche et remettez le dossier au club."
+        ],
+        "liens": [
+          {
+            "libelle": "Télécharger la fiche d’inscription ados",
+            "url": "https://drive.google.com/file/d/11L_HSq7-nR_tcZw3wV6SePM9U-QWXg5L/view?usp=drive_link"
+          }
+        ]
+      },
+      {
+        "id": "equipement",
+        "titre": "Le matériel à prévoir",
+        "introduction": "L’équipement personnel n’est pas fourni.",
+        "liste": [
+          "Gants de boxe : 14 oz ou 16 oz ; 12 oz si vous pesez moins de 70 kg.",
+          "Short ou jogging.",
+          "T-shirt ou débardeur.",
+          "Protège-dents.",
+          "Bandes de boxe.",
+          "Corde à sauter, facultative."
+        ]
+      },
+      {
+        "id": "documents",
+        "titre": "Les documents utiles",
+        "paragraphes": [
+          "Retrouvez les formulaires médicaux de la saison en cours sur le site de la FFBoxe. Choisissez celui qui correspond à votre pratique et faites-le compléter par votre médecin."
+        ],
+        "liens": [
+          {
+            "libelle": "Certificats médicaux : loisir et compétition",
+            "url": "https://www.ffboxe.com/certificat-medical/"
+          },
+          {
+            "libelle": "Lire la charte du club",
+            "reference": "documents.charte.url"
+          }
+        ]
+      },
+      {
+        "id": "aides",
+        "titre": "Les aides à l’inscription",
+        "paragraphes": [
+          "Vous pouvez être éligible à une aide à l’inscription, comme le pass Sport ou le dispositif Coup de pouce de Montpellier. Vérifiez les conditions de la saison en cours et contactez le club avant de régler votre cotisation."
+        ],
+        "liens": [
+          {
+            "libelle": "Vérifier mon éligibilité au pass Sport",
+            "url": "https://www.pass.sports.gouv.fr/"
+          }
+        ]
+      }
+    ],
+    "aideTitre": "Besoin d’aide ?",
+    "aideTexte": "Pour toute question sur votre inscription ou votre dossier, contactez le club."
   }
 }
