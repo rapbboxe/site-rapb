@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Ring Athlétique du Petit Bard",
-    "description": "Ring Athlétique du Petit Bard : boxe anglaise à Montpellier depuis 1999, horaires, accès et inscriptions."
+    "title": "Ring Athlétique du Petit-Bard",
+    "description": "Ring Athlétique du Petit-Bard : boxe anglaise à Montpellier depuis 1999, horaires, accès et inscriptions."
   },
   "accessibilite": {
     "accueil": "Accueil",
@@ -12,13 +12,13 @@
     "informationsClub": "Informations du club",
     "accesRapides": "Accès rapides",
     "tarifs": "Tarifs",
-    "carte": "Localisation de la salle de boxe du Petit Bard",
-    "logo": "Logo du Ring Athlétique du Petit Bard"
+    "carte": "Localisation de la salle de boxe du Petit-Bard",
+    "logo": "Logo du Ring Athlétique du Petit-Bard"
   },
   "identite": {
-    "nom": "Ring Athlétique du Petit Bard",
+    "nom": "Ring Athlétique du Petit-Bard",
     "nomCourtLigne1": "Ring Athlétique",
-    "nomCourtLigne2": "du Petit Bard"
+    "nomCourtLigne2": "du Petit-Bard"
   },
   "menu": {
     "horaires": "Horaires",
@@ -30,7 +30,7 @@
   "actualites": ["INFOS", "Reprise adultes : 1er septembre", "Reprise ados : 15 septembre"],
   "accueil": {
     "surtitre": "R.A.P.B · Boxe anglaise · Montpellier",
-    "titre": "La boxe au Petit Bard",
+    "titre": "La boxe au Petit-Bard",
     "miseEnAvant": "depuis 1999",
     "description": "Boxe anglaise pour tous, encadrée par des entraîneurs diplômés, dans un cadre exigeant et bienveillant.",
     "boutonHoraires": "Voir les horaires",
@@ -124,7 +124,7 @@
     "surtitre": "Nous trouver",
     "titre": "Accès",
     "adresseLibelle": "Adresse",
-    "adresse": ["Salle de boxe du Petit Bard", "1184 rue Paul Rimbaud", "34080 Montpellier"],
+    "adresse": ["Salle de boxe du Petit-Bard", "1184 rue Paul Rimbaud", "34080 Montpellier"],
     "transport": "Tram ligne 3 · arrêt Pergola à 200 m",
     "bouton": "Ouvrir l’itinéraire"
   },
@@ -156,7 +156,7 @@
   },
   "guideInscription": {
     "meta": {
-      "titre": "Guide d’inscription – Ring Athlétique du Petit Bard",
+      "titre": "Guide d’inscription – Ring Athlétique du Petit-Bard",
       "description": "Inscription au RAPB : cotisation, licence fédérale, documents et équipement pour les adultes et les adolescents."
     },
     "lienAccueil": {
@@ -173,7 +173,7 @@
     },
     "titre": "Guide d’inscription",
     "saison": "Saison 2026–2027",
-    "introduction": "Les démarches pour rejoindre le Ring Athlétique du Petit Bard, préparer votre dossier et venir vous entraîner.",
+    "introduction": "Les démarches pour rejoindre le Ring Athlétique du Petit-Bard, préparer votre dossier et venir vous entraîner.",
     "essai": "Les cours d’essai sont limités à une semaine.",
     "sommaire": "Dans ce guide",
     "tarifsTitre": "La cotisation",

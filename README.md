@@ -1,4 +1,4 @@
-# Site du Ring Athlétique du Petit Bard
+# Site du Ring Athlétique du Petit-Bard
 
 Projet Vite en HTML, CSS et JavaScript. `npm run build` génère le site statique dans `dist/`.
 
