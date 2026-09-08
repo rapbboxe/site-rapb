@@ -497,6 +497,11 @@ footer p {
       linear-gradient(90deg, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.45)),
       linear-gradient(0deg, rgba(0, 0, 0, 0.85), transparent 60%);
   }
+  #hero-highlight {
+      font-family: monospace;
+      font-weight: 400;
+      font-synthesis: none;
+  }
   h1 {
     font-size: clamp(48px, 15vw, 78px);
   }
