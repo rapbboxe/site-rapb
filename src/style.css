@@ -740,7 +740,7 @@ footer p {
     height: 36px;
   }
   .announcement-bar {
-    padding: 11px 18px;
+    padding: 40px 18px 11px;
     align-items: flex-start;
     gap: 12px;
     font-size: 12px;
