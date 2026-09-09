@@ -459,6 +459,12 @@ footer p {
   font-size: 11px;
 }
 @media (max-width: 800px) {
+  #hero-highlight {
+    font-family: monospace;
+    font-weight: 400;
+    font-synthesis: none;
+    letter-spacing: -0.035em;
+  }
   .topbar {
     height: 70px;
   }
