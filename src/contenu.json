@@ -1,4 +1,5 @@
 {
+  "actualites": ["Reprise adultes : 1er septembre", "Reprise ados : 16 septembre"],
   "meta": {
     "title": "Ring Athlétique du Petit Bard",
     "description": "Ring Athlétique du Petit Bard : boxe anglaise à Montpellier depuis 1999, horaires, accès et inscriptions."
@@ -27,7 +28,6 @@
     "inscription": "S’inscrire"
   },
   "actualitesTitre": "Infos du club",
-  "actualites": ["Reprise adultes : 1er septembre", "Reprise ados : 15 septembre"],
   "accueil": {
     "surtitre": "R.A.P.B · Boxe anglaise · Montpellier",
     "titre": "La boxe au Petit Bard",

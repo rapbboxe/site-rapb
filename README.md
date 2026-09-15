@@ -6,7 +6,7 @@ Projet Vite en HTML, CSS et JavaScript. `npm run build` génère le site statiqu
 
 ```bash
 npm install
-npm run dev
+npm run dev -- --host 0.0.0.0
 ```
 
 Les actualités, horaires, tarifs et coordonnées se modifient dans `src/contenu.json`. Pour masquer le bandeau d’actualités, mettez `"actualites": []`.
