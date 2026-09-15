@@ -35,7 +35,7 @@
     "description": "Boxe anglaise pour tous, encadrée par des entraîneurs diplômés, dans un cadre exigeant et bienveillant.",
     "boutonHoraires": "Voir les horaires",
     "boutonInscription": "S’inscrire",
-    "publics": "Ados 12–15 ans · Adultes dès 16 ans"
+    "publics": "Ados 11–15 ans · Adultes dès 16 ans"
   },
   "accesRapides": {
     "horaires": {
@@ -74,7 +74,7 @@
     },
     {
       "public": "Ados",
-      "details": "12–15 ans · Tous niveaux",
+      "details": "11–15 ans · Tous niveaux",
       "jour": "Mercredi",
       "heure": "16h00 — 17h30"
     },
@@ -86,7 +86,7 @@
     },
     {
       "public": "Ados",
-      "details": "12–15 ans · Tous niveaux",
+      "details": "11–15 ans · Tous niveaux",
       "jour": "Vendredi",
       "heure": "19h30 — 20h30"
     },
@@ -107,7 +107,7 @@
     {
       "public": "Ados",
       "prix": "150 €",
-      "details": "12–15 ans"
+      "details": "11–15 ans"
     },
     {
       "public": "Adultes",
@@ -234,7 +234,7 @@
       },
       {
         "id": "ados",
-        "titre": "Ados : de 12 à 15 ans",
+        "titre": "Ados : de 11 à 15 ans",
         "paragraphes": [
           "L’inscription se fait avec la fiche d’inscription boxe enfant, sans inscription en ligne. Téléchargez la fiche et remettez le dossier au club."
         ],
