@@ -22,7 +22,10 @@ export function renderGuide(content) {
     if (typeof url !== 'string' || !/^(https?:\/\/|\.\/|#)/.test(url)) {
       throw new Error(`Invalid guide URL: ${url}`);
     }
-    return `<a class="${className}" href="${text(url)}">${text(link.libelle)}</a>`;
+    const targetAttributes = /^https?:\/\//.test(url)
+      ? ' target="_blank" rel="noopener noreferrer"'
+      : '';
+    return `<a class="${className}" href="${text(url)}"${targetAttributes}>${text(link.libelle)}</a>`;
   }
 
   function renderDetails(item) {
