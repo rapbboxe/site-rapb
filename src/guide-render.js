@@ -28,7 +28,16 @@ export function renderGuide(content) {
   function renderDetails(item) {
     return `
       ${item.introduction ? `<p class="guide-introduction">${text(item.introduction)}</p>` : ''}
-      ${(item.paragraphes || []).map((paragraph) => `<p>${text(paragraph)}</p>`).join('\n')}
+      ${(item.paragraphes || [])
+        .map((paragraph) => {
+          const parts = Array.isArray(paragraph) ? paragraph : [paragraph];
+          return `<p>${parts
+            .map((part) =>
+              typeof part === 'string' ? text(part) : renderLink(part, 'guide-inline-link')
+            )
+            .join('')}</p>`;
+        })
+        .join('\n')}
       ${item.liste ? `<ul>${item.liste.map((entry) => `<li>${text(entry)}</li>`).join('\n')}</ul>` : ''}
       ${item.liens ? `<div class="guide-links">${item.liens.map((link) => renderLink(link)).join('\n')}</div>` : ''}
       ${item.note ? `<p class="guide-note">${text(item.note)}</p>` : ''}

@@ -211,7 +211,14 @@
             "titre": "Demander votre licence fédérale",
             "paragraphes": [
               "Une fois la cotisation réglée, effectuez vous-même votre demande de licence en ligne.",
-              "Préparez le certificat correspondant à votre pratique à l’aide des documents ci-dessous. Pour les compétiteurs, consultez la liste des examens demandés par la FFBoxe.",
+              [
+                "Préparez le certificat correspondant à votre pratique à l’aide des ",
+                {
+                  "libelle": "documents ci-dessous",
+                  "url": "#documents"
+                },
+                ". Pour les compétiteurs, consultez la liste des examens demandés par la FFBoxe."
+              ],
               "Créez votre compte sur l’espace fédéral, ou connectez-vous à votre compte existant, puis remplissez la demande de licence."
             ],
             "liens": [
