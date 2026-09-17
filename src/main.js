@@ -114,6 +114,38 @@ content.tarifs.forEach((item) => {
   q('#pricing').append(price);
 });
 
+const usefulDocuments = content.guideInscription.sections.find(
+  (section) => section.id === 'documents'
+);
+
+if (!usefulDocuments) {
+  q('#documents-utiles').hidden = true;
+} else {
+  setText('#documents-kicker', content.sectionDocumentsAccueil.surtitre);
+  setText('#documents-heading', usefulDocuments.titre);
+  setText('#documents-description', usefulDocuments.paragraphes[0]);
+
+  usefulDocuments.liens.forEach((documentLink) => {
+    const link = document.createElement('a');
+    const url = documentLink.reference
+      ? documentLink.reference.split('.').reduce((value, key) => value[key], content)
+      : documentLink.url;
+
+    link.className = 'useful-document-link';
+    link.href = url;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.textContent = documentLink.libelle;
+
+    const arrow = document.createElement('span');
+    arrow.setAttribute('aria-hidden', 'true');
+    arrow.textContent = '↗';
+
+    link.append(arrow);
+    q('#documents-links').append(link);
+  });
+}
+
 setText('#access-kicker', content.sectionAcces.surtitre);
 setText('#access-title', content.sectionAcces.titre);
 setText('#address-label', content.sectionAcces.adresseLibelle);

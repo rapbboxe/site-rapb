@@ -325,6 +325,48 @@ h2 {
   color: #660007;
   font-size: 11px;
 }
+.useful-documents {
+  background: #111;
+  color: #fff;
+}
+.useful-documents .section-heading > p:last-child {
+  color: #aaa;
+}
+.useful-documents-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid #444;
+}
+.useful-document-link {
+  min-height: 150px;
+  padding: 30px;
+  border-right: 1px solid #444;
+  border-bottom: 1px solid #444;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.4;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+.useful-document-link:first-child {
+  border-left: 1px solid #444;
+}
+.useful-document-link:hover {
+  background: var(--red);
+}
+.useful-document-link span {
+  flex: none;
+  color: var(--red);
+  font-size: 24px;
+}
+.useful-document-link:hover span {
+  color: #fff;
+}
 .steps {
   list-style: none;
   margin: 0;
@@ -556,6 +598,16 @@ footer p {
   }
   .registration {
     gap: 60px;
+  }
+  .useful-documents-links {
+    grid-template-columns: 1fr;
+  }
+  .useful-document-link,
+  .useful-document-link:first-child {
+    min-height: 110px;
+    padding: 24px 0;
+    border-left: 0;
+    border-right: 0;
   }
   .access-copy {
     order: -1;
