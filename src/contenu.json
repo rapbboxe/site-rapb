@@ -299,6 +299,10 @@
           {
             "libelle": "Vérifier mon éligibilité au pass Sport",
             "url": "https://www.pass.sports.gouv.fr/"
+          },
+          {
+            "libelle": "Coup de Pouce",
+            "url": "https://www.montpellier.fr/actions/competences/jeunesse/dispositifs-de-soutien-la-jeunesse/le-coup-de-pouce-jeune"
           }
         ]
       }
