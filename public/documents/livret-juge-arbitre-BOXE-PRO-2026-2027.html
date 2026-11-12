@@ -1,0 +1,1743 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Livret du Juge Arbitre — Boxe Professionnelle FFBoxe 2026</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap');
+
+      :root {
+        --rouge: #c8102e;
+        --rouge-dark: #9b0a22;
+        --bleu: #003087;
+        --bleu-light: #1a4faf;
+        --noir: #0d0d0d;
+        --gris-fonce: #1c1c1e;
+        --gris-mid: #2c2c2e;
+        --gris-light: #3a3a3c;
+        --gris-pale: #f2f2f7;
+        --blanc: #ffffff;
+        --or: #d4af37;
+        --texte: #e8e8ec;
+        --texte-dim: #8e8e93;
+        --vert: #30d158;
+        --orange: #ff9f0a;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background: var(--noir);
+        color: var(--texte);
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        line-height: 1.6;
+      }
+
+      /* ── COUVERTURE ── */
+      .cover {
+        min-height: 100vh;
+        background: linear-gradient(160deg, var(--gris-fonce) 0%, var(--noir) 60%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 60px 30px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .cover::before {
+        content: '';
+        position: absolute;
+        top: -120px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(circle, rgba(200, 16, 46, 0.18) 0%, transparent 70%);
+        pointer-events: none;
+      }
+
+      .cover-ring {
+        width: 90px;
+        height: 90px;
+        border: 4px solid var(--rouge);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 30px;
+        position: relative;
+      }
+      .cover-ring svg {
+        width: 48px;
+        height: 48px;
+        fill: var(--rouge);
+      }
+
+      .cover-badge {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 11px;
+        letter-spacing: 0.35em;
+        color: var(--rouge);
+        text-transform: uppercase;
+        margin-bottom: 18px;
+      }
+
+      .cover h1 {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: clamp(52px, 10vw, 96px);
+        line-height: 0.95;
+        letter-spacing: 0.02em;
+        color: var(--blanc);
+        margin-bottom: 10px;
+      }
+
+      .cover h1 span {
+        color: var(--rouge);
+      }
+
+      .cover-sub {
+        font-size: 18px;
+        font-weight: 300;
+        color: var(--texte-dim);
+        margin-bottom: 40px;
+        letter-spacing: 0.05em;
+      }
+
+      .cover-meta {
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 60px;
+      }
+      .cover-meta-item {
+        background: var(--gris-mid);
+        border: 1px solid var(--gris-light);
+        border-radius: 8px;
+        padding: 10px 20px;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--texte-dim);
+      }
+      .cover-meta-item strong {
+        display: block;
+        color: var(--blanc);
+        font-size: 15px;
+        margin-bottom: 2px;
+      }
+
+      .cover-nav {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .cover-nav a {
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        color: var(--texte-dim);
+        padding: 8px 18px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 500;
+        text-decoration: none;
+        transition: all 0.2s;
+        letter-spacing: 0.04em;
+      }
+      .cover-nav a:hover {
+        border-color: var(--rouge);
+        color: var(--blanc);
+      }
+
+      /* ── LAYOUT GLOBAL ── */
+      .container {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      /* ── CHAPITRES ── */
+      .chapter {
+        padding: 80px 0 60px;
+        border-bottom: 1px solid var(--gris-mid);
+      }
+
+      .chapter-eyebrow {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 11px;
+        letter-spacing: 0.3em;
+        color: var(--rouge);
+        text-transform: uppercase;
+        margin-bottom: 12px;
+      }
+
+      .chapter h2 {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: clamp(36px, 6vw, 58px);
+        letter-spacing: 0.03em;
+        color: var(--blanc);
+        line-height: 1;
+        margin-bottom: 32px;
+      }
+
+      .chapter h3 {
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--rouge);
+        margin: 40px 0 14px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .chapter h3::after {
+        content: '';
+        flex: 1;
+        height: 1px;
+        background: var(--gris-mid);
+      }
+
+      p {
+        color: var(--texte-dim);
+        margin-bottom: 14px;
+      }
+      p strong {
+        color: var(--texte);
+      }
+
+      /* ── CARDS ── */
+      .card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 16px;
+        margin: 24px 0;
+      }
+
+      .card {
+        background: var(--gris-fonce);
+        border: 1px solid var(--gris-mid);
+        border-radius: 12px;
+        padding: 20px;
+        transition: border-color 0.2s;
+      }
+      .card:hover {
+        border-color: var(--rouge);
+      }
+
+      .card-label {
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--texte-dim);
+        margin-bottom: 6px;
+      }
+      .card-title {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 26px;
+        color: var(--blanc);
+        letter-spacing: 0.05em;
+        margin-bottom: 8px;
+      }
+      .card p {
+        font-size: 13px;
+        margin-bottom: 0;
+      }
+
+      /* ── GESTE CARDS ── */
+      .geste-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 14px;
+        margin: 24px 0;
+      }
+
+      .geste-card {
+        background: var(--gris-fonce);
+        border: 1px solid var(--gris-mid);
+        border-radius: 12px;
+        padding: 18px 16px;
+        text-align: center;
+        transition: all 0.2s;
+      }
+      .geste-card:hover {
+        border-color: var(--bleu-light);
+        transform: translateY(-2px);
+      }
+
+      .geste-icon {
+        font-size: 36px;
+        margin-bottom: 10px;
+        display: block;
+        line-height: 1;
+      }
+
+      .geste-name {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 18px;
+        color: var(--blanc);
+        letter-spacing: 0.04em;
+        margin-bottom: 6px;
+      }
+
+      .geste-cmd {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 11px;
+        color: var(--bleu-light);
+        background: rgba(26, 79, 175, 0.15);
+        border: 1px solid rgba(26, 79, 175, 0.3);
+        border-radius: 4px;
+        padding: 2px 8px;
+        display: inline-block;
+        margin-bottom: 8px;
+      }
+
+      .geste-desc {
+        font-size: 12px;
+        color: var(--texte-dim);
+        line-height: 1.5;
+        margin-bottom: 0;
+      }
+
+      /* ── COMMANDE TABLE ── */
+      .cmd-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 13px;
+      }
+      .cmd-table th {
+        text-align: left;
+        padding: 10px 14px;
+        background: var(--gris-mid);
+        color: var(--texte-dim);
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        border-bottom: 2px solid var(--gris-light);
+      }
+      .cmd-table td {
+        padding: 12px 14px;
+        border-bottom: 1px solid var(--gris-mid);
+        vertical-align: top;
+        color: var(--texte-dim);
+      }
+      .cmd-table tr:hover td {
+        background: rgba(255, 255, 255, 0.02);
+      }
+      .cmd-table .cmd-word {
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 700;
+        font-size: 15px;
+        color: var(--blanc);
+      }
+      .cmd-table .cmd-action {
+        color: var(--texte);
+        font-weight: 500;
+      }
+
+      /* ── BARÈME ── */
+      .bareme-row {
+        display: flex;
+        align-items: stretch;
+        gap: 0;
+        margin: 20px 0;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 1px solid var(--gris-mid);
+      }
+      .bareme-score {
+        min-width: 90px;
+        background: var(--gris-mid);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 14px;
+        text-align: center;
+      }
+      .bareme-score .vs {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 32px;
+        color: var(--blanc);
+        letter-spacing: 0.03em;
+        line-height: 1;
+      }
+      .bareme-score .tag {
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        margin-top: 4px;
+      }
+      .bareme-body {
+        flex: 1;
+        padding: 18px 20px;
+      }
+      .bareme-body strong {
+        display: block;
+        font-size: 14px;
+        color: var(--blanc);
+        margin-bottom: 6px;
+      }
+      .bareme-body p {
+        font-size: 13px;
+        margin-bottom: 0;
+      }
+
+      .tag-leger {
+        color: var(--vert);
+      }
+      .tag-clair {
+        color: var(--orange);
+      }
+      .tag-total {
+        color: var(--rouge);
+      }
+
+      /* ── KD TABLE (réutilisée : bulletin de jugement) ── */
+      .kd-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1px;
+        background: var(--gris-mid);
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 20px 0;
+        border: 1px solid var(--gris-mid);
+      }
+      .kd-cell {
+        background: var(--gris-fonce);
+        padding: 16px 12px;
+        text-align: center;
+      }
+      .kd-cell.header {
+        background: var(--gris-mid);
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: var(--texte-dim);
+      }
+      .kd-cell.cat {
+        font-weight: 700;
+        font-size: 13px;
+        color: var(--blanc);
+        text-align: left;
+        padding-left: 16px;
+      }
+      .kd-cell .num {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 28px;
+        color: var(--rouge);
+        line-height: 1;
+        display: block;
+      }
+      .kd-cell .sub {
+        font-size: 10px;
+        color: var(--texte-dim);
+      }
+
+      /* ── DÉCISIONS ── */
+      .decision-block {
+        background: var(--gris-fonce);
+        border-left: 3px solid var(--rouge);
+        border-radius: 0 10px 10px 0;
+        padding: 16px 20px;
+        margin: 12px 0;
+      }
+      .decision-block.bleu {
+        border-left-color: var(--bleu-light);
+      }
+      .decision-block.vert {
+        border-left-color: var(--vert);
+      }
+      .decision-block.or {
+        border-left-color: var(--or);
+      }
+
+      .decision-sigle {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+      }
+      .decision-sigle.g {
+        color: var(--vert);
+      }
+      .decision-sigle.p {
+        color: var(--rouge);
+      }
+      .decision-sigle.n {
+        color: var(--or);
+      }
+
+      .decision-title {
+        font-weight: 700;
+        color: var(--blanc);
+        font-size: 14px;
+        margin-bottom: 4px;
+      }
+
+      /* ── REPOS TABLE ── */
+      .repos-grid {
+        display: grid;
+        grid-template-columns: 130px 1fr;
+        gap: 1px;
+        background: var(--gris-mid);
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 20px 0;
+        border: 1px solid var(--gris-mid);
+      }
+      .repos-cell {
+        background: var(--gris-fonce);
+        padding: 14px 16px;
+        font-size: 13px;
+      }
+      .repos-cell.dur {
+        background: var(--gris-mid);
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 22px;
+        color: var(--rouge);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .repos-cell.header {
+        background: var(--gris-light);
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: var(--texte-dim);
+      }
+
+      /* ── ALERTE ── */
+      .alerte {
+        background: rgba(200, 16, 46, 0.1);
+        border: 1px solid rgba(200, 16, 46, 0.4);
+        border-radius: 10px;
+        padding: 16px 20px;
+        margin: 20px 0;
+        display: flex;
+        gap: 14px;
+        align-items: flex-start;
+      }
+      .alerte-icon {
+        font-size: 20px;
+        flex-shrink: 0;
+        margin-top: 1px;
+      }
+      .alerte-text {
+        font-size: 13px;
+        color: var(--texte);
+        line-height: 1.6;
+      }
+      .alerte-text strong {
+        color: var(--blanc);
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      .alerte.bleu {
+        background: rgba(0, 48, 135, 0.15);
+        border-color: rgba(26, 79, 175, 0.4);
+      }
+      .alerte.vert {
+        background: rgba(48, 209, 88, 0.08);
+        border-color: rgba(48, 209, 88, 0.3);
+      }
+      .alerte.or {
+        background: rgba(212, 175, 55, 0.1);
+        border-color: rgba(212, 175, 55, 0.4);
+      }
+
+      /* ── SANCTIONS FLOW ── */
+      .flow {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin: 24px 0;
+        position: relative;
+      }
+      .flow::before {
+        content: '';
+        position: absolute;
+        left: 24px;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: linear-gradient(to bottom, var(--rouge) 0%, var(--bleu) 100%);
+      }
+      .flow-step {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+        padding: 16px 0;
+        position: relative;
+      }
+      .flow-num {
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+        background: var(--gris-fonce);
+        border: 2px solid var(--rouge);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 22px;
+        color: var(--rouge);
+        position: relative;
+        z-index: 1;
+      }
+      .flow-step:nth-child(2) .flow-num {
+        border-color: var(--orange);
+        color: var(--orange);
+      }
+      .flow-step:nth-child(3) .flow-num {
+        border-color: var(--or);
+        color: var(--or);
+      }
+      .flow-step:nth-child(4) .flow-num {
+        border-color: var(--bleu-light);
+        color: var(--bleu-light);
+      }
+
+      .flow-content {
+        padding-top: 10px;
+      }
+      .flow-content strong {
+        display: block;
+        font-size: 15px;
+        color: var(--blanc);
+        margin-bottom: 4px;
+      }
+      .flow-content p {
+        font-size: 13px;
+        margin-bottom: 0;
+      }
+
+      /* ── TENUE ── */
+      .tenue-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 12px;
+        margin: 20px 0;
+      }
+      .tenue-item {
+        background: var(--gris-fonce);
+        border: 1px solid var(--gris-mid);
+        border-radius: 10px;
+        padding: 14px 16px;
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+      }
+      .tenue-emoji {
+        font-size: 22px;
+        flex-shrink: 0;
+      }
+      .tenue-text strong {
+        display: block;
+        font-size: 13px;
+        color: var(--blanc);
+      }
+      .tenue-text span {
+        font-size: 12px;
+        color: var(--texte-dim);
+      }
+
+      /* ── FOOTER ── */
+      .footer {
+        background: var(--gris-fonce);
+        border-top: 1px solid var(--gris-mid);
+        padding: 40px 0;
+        text-align: center;
+      }
+      .footer p {
+        font-size: 12px;
+        color: var(--texte-dim);
+      }
+      .footer strong {
+        color: var(--rouge);
+      }
+
+      /* ── DIVIDER ── */
+      .divider {
+        height: 1px;
+        background: linear-gradient(90deg, transparent, var(--rouge), transparent);
+        margin: 40px 0;
+        opacity: 0.4;
+      }
+
+      /* ── PRINT ── */
+      @media print {
+        body {
+          background: white;
+          color: black;
+        }
+        .cover {
+          min-height: auto;
+          padding: 40px;
+          background: white;
+          border-bottom: 3px solid #c8102e;
+        }
+        .cover h1 {
+          color: black;
+          font-size: 64px;
+        }
+        .cover h1 span {
+          color: #c8102e;
+        }
+        .chapter {
+          page-break-before: always;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .kd-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .repos-grid {
+          grid-template-columns: 1fr;
+        }
+        .repos-cell.dur {
+          padding: 10px;
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ═══════════════════════════ COUVERTURE ═══════════════════════════ -->
+    <div class="cover" id="top">
+      <div class="cover-ring">
+        <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="24" cy="24" r="20" fill="none" stroke="#C8102E" stroke-width="3" />
+          <path
+            d="M14 30 L14 18 L18 18 L22 26 L26 18 L30 18 L34 18 L34 30 L30 30 L30 22 L26 30 L22 30 L18 22 L18 30 Z"
+            fill="#C8102E"
+          />
+        </svg>
+      </div>
+      <div class="cover-badge">
+        Fédération Française de Boxe — Ligue Nationale de Boxe Professionnelle
+      </div>
+      <h1>JUGE<br /><span>ARBITRE</span></h1>
+      <div class="cover-sub">Livret de Référence · Boxe Professionnelle</div>
+      <div class="cover-meta">
+        <div class="cover-meta-item"><strong>20 Règles</strong>Code Sportif</div>
+        <div class="cover-meta-item"><strong>10 Points</strong>Système de Notation</div>
+        <div class="cover-meta-item"><strong>3 Groupes</strong>Élites 1·2·3</div>
+        <div class="cover-meta-item"><strong>Applicable</strong>dès le 01/01/2026</div>
+      </div>
+      <nav class="cover-nav">
+        <a href="#devoirs">Devoirs & Rôle</a>
+        <a href="#commandements">Commandements</a>
+        <a href="#gestuelle">Gestuelle</a>
+        <a href="#jugement">Jugement</a>
+        <a href="#sanctions">Sanctions</a>
+        <a href="#decisions">Décisions</a>
+        <a href="#repos">Durée & Repos</a>
+        <a href="#tenue">Tenue</a>
+      </nav>
+    </div>
+
+    <!-- ═══════════════════════════ 1. DEVOIRS ═══════════════════════════ -->
+    <section class="chapter" id="devoirs">
+      <div class="container">
+        <div class="chapter-eyebrow">Règle 12</div>
+        <h2>Devoirs &amp; Rôle</h2>
+
+        <div class="alerte or">
+          <span class="alerte-icon">🥊</span>
+          <div class="alerte-text">
+            <strong>Ceci est le livret Boxe Professionnelle — pas la Boxe Amateur</strong>
+            Pas de Ten Points Must System classique, pas de KD limité par catégorie, pas de RSC : la
+            Boxe Pro utilise ses propres sigles (AA, AABL, DISQ, KO, AB, ABJEP) et une échelle de
+            notation 10-10 à 10-6. Ne pas transposer les réflexes de la Boxe Amateur ou de la BEA.
+          </div>
+        </div>
+
+        <div class="alerte bleu">
+          <span class="alerte-icon">🎯</span>
+          <div class="alerte-text">
+            <strong>Premier devoir de l'arbitre</strong>
+            Protéger et garantir la santé des boxeurs tout au long du combat.
+          </div>
+        </div>
+
+        <h3>Responsabilités fondamentales</h3>
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-label">Priorité n°1</div>
+            <div class="card-title">Sécurité</div>
+            <p>
+              Veiller à ce que l'intégrité du boxeur le plus faible ne soit jamais mise en danger.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-label">Priorité n°2</div>
+            <div class="card-title">Contrôle</div>
+            <p>Garder le contrôle du combat tout au long de l'opposition.</p>
+          </div>
+          <div class="card">
+            <div class="card-label">Priorité n°3</div>
+            <div class="card-title">Équité</div>
+            <p>Veiller à ce que la règle et le fair-play soient observés strictement.</p>
+          </div>
+          <div class="card">
+            <div class="card-label">Rappel</div>
+            <div class="card-title">Vainqueur non désigné avant l'annonce</div>
+            <p>
+              L'arbitre ne doit pas saisir les mains des boxeurs ni désigner le vainqueur tant que
+              l'annonce officielle n'a pas été faite.
+            </p>
+          </div>
+        </div>
+
+        <h3>Avant le combat</h3>
+        <p>
+          <strong>Pesée :</strong> les boxeurs se pèsent sans aucune tolérance de poids, en
+          sous-vêtements ou en maillot de bain, pieds nus. Le délégué fédéral effectue les
+          opérations de pesée (ou l'arbitre du combat en compétitions nationales / boxeurs classés
+          au niveau international). Pesée réglementaire le jour même (avant 19h) ou la veille (entre
+          17h et 20h).
+        </p>
+        <p>
+          <strong>Vérification des bandages et des gants :</strong> le juge ou l'arbitre assiste à
+          la pose des bandages, vérifiés et signés dans les vestiaires. Les gants sont mis et signés
+          sur l'adhésif en présence de l'arbitre du combat, et ne peuvent être retirés qu'en sa
+          présence.
+        </p>
+        <p>
+          <strong>Fair-play et protocole :</strong> les boxeurs doivent se saluer en se touchant les
+          gants avant le combat et à l'appel de la dernière reprise, à la demande de l'arbitre, et
+          se serrer la main avant l'annonce de la décision.
+        </p>
+
+        <h3>Après le combat</h3>
+        <p>
+          La décision est donnée à l'issue du combat lorsque les boxeurs ont enlevé les gants. Seuls
+          les boxeurs, l'arbitre et le présentateur sont autorisés à rester sur le ring lors de
+          l'annonce. L'arbitre invite les boxeurs à regagner le centre du ring, tient le poignet de
+          chaque boxeur et lève le bras du vainqueur à l'annonce de la décision (les deux bras en
+          cas de match nul).
+        </p>
+
+        <div class="alerte">
+          <span class="alerte-icon">⚠️</span>
+          <div class="alerte-text">
+            <strong>Révision d'une décision</strong>
+            Seule une erreur matérielle avérée allant à l'encontre du code sportif permet
+            d'envisager la révision d'une décision rendue.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ 2. COMMANDEMENTS ═══════════════════════════ -->
+    <section class="chapter" id="commandements">
+      <div class="container">
+        <div class="chapter-eyebrow">Règle 12</div>
+        <h2>Commandements</h2>
+
+        <p>
+          L'arbitre utilise <strong>quatre commandements</strong>. Le compte debout n'existe pas :
+          l'arbitre peut compter (KD) le boxeur autant de fois qu'il le juge nécessaire, sans limite
+          de nombre dans une reprise ou dans le combat.
+        </p>
+
+        <table class="cmd-table">
+          <thead>
+            <tr>
+              <th>Commandement</th>
+              <th>Déclenchement</th>
+              <th>Action de l'arbitre</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="cmd-word">BOX</span></td>
+              <td>
+                1re reprise pour démarrer le combat (autres reprises : geste du bras) · Après un «
+                TIME » ou un « STOP » pour reprendre
+              </td>
+              <td class="cmd-action">Ordonne aux boxeurs de boxer ou de reprendre le combat.</td>
+            </tr>
+            <tr>
+              <td><span class="cmd-word">STOP</span></td>
+              <td>
+                Fin de reprise · Faute d'un boxeur (qui doit regarder l'arbitre, écouter,
+                acquiescer) · Avertissement ou disqualification · Boxeur « à terre » · Dernière
+                reprise (salut des gants)
+              </td>
+              <td class="cmd-action">Ordonne aux boxeurs de s'arrêter de boxer.</td>
+            </tr>
+            <tr>
+              <td><span class="cmd-word">BREAK</span></td>
+              <td>Corps à corps, neutralisation mutuelle sans faute</td>
+              <td class="cmd-action">
+                Les deux boxeurs se séparent d'un pas en arrière sans frapper et reprennent
+                immédiatement, sans autre ordre.
+              </td>
+            </tr>
+            <tr>
+              <td><span class="cmd-word">TIME</span></td>
+              <td>
+                Raison technique, incident matériel (chaussure délacée, perte du protège-dents…)
+              </td>
+              <td class="cmd-action">
+                Ordonne au chronométreur d'arrêter le chronomètre et aux boxeurs de s'arrêter de
+                boxer.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          L'arbitre peut toucher les boxeurs avec ses mains pour stopper le combat, rompre une
+          opposition non réglementaire ou les séparer.
+        </p>
+
+        <h3>Durée des combats — Règle 9</h3>
+        <p>
+          Le nombre et la durée des reprises varient selon le groupe des deux boxeurs (hommes) ; les
+          reprises sont toujours espacées d'une minute de repos.
+        </p>
+
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-label">Élites 3 vs Élites 3 / Élites 2</div>
+            <div class="card-title">4×3 ou 6×3</div>
+            <p>Un boxeur Élites 3 ne rencontre jamais un Élites 1.</p>
+          </div>
+          <div class="card">
+            <div class="card-label">Élites 2 vs Élites 2</div>
+            <div class="card-title">4×3 ou 6×3, ou 8×3</div>
+            <p>Face à un Élites 1 : 4×3, 6×3 ou 8×3.</p>
+          </div>
+          <div class="card">
+            <div class="card-label">Élites 1 vs Élites 1</div>
+            <div class="card-title">4×3 à 12×3</div>
+            <p>4×3, 6×3, 8×3, 10×3 ou 12×3 selon la compétition.</p>
+          </div>
+          <div class="card">
+            <div class="card-label">Femmes — Élites Femme</div>
+            <div class="card-title">4×2 à 10×2</div>
+            <p>4×2, 6×2, 8×2 ou 10×2.</p>
+          </div>
+        </div>
+
+        <h3>Protocole du Knock Down (KD)</h3>
+        <div class="flow">
+          <div class="flow-step">
+            <div class="flow-num">1</div>
+            <div class="flow-content">
+              <strong>« STOP, 1 »</strong>
+              <p>L'arbitre débute le compte.</p>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-num">2</div>
+            <div class="flow-content">
+              <strong>Coin neutre</strong>
+              <p>
+                Il continue le compte lorsque l'adversaire rejoint le coin neutre qu'il lui a
+                désigné.
+              </p>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-num">3</div>
+            <div class="flow-content">
+              <strong>Compte jusqu'à 8</strong>
+              <p>
+                L'arbitre s'assure que le boxeur est apte à reprendre le combat et prononce, le cas
+                échéant, « BOX ». Sinon, « BOX » suivi de « STOP » pour arrêter le combat.
+              </p>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-num">4</div>
+            <div class="flow-content">
+              <strong>« OUT »</strong>
+              <p>
+                Si à la fin du compte de 8 l'arbitre décide de prolonger jusqu'à 10, il prononce «
+                OUT » pour signifier le KO.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="alerte">
+          <span class="alerte-icon">🔢</span>
+          <div class="alerte-text">
+            <strong>Pas de limite de KD</strong>
+            Contrairement à la Boxe Amateur, il n'existe aucun tableau de nombre de KD entraînant
+            l'arrêt automatique du combat par catégorie d'âge. L'arrêt reste à la seule appréciation
+            de l'arbitre, à chaque KD.
+          </div>
+        </div>
+
+        <p>
+          Si un boxeur compté « 8 » reprend le combat et retourne à terre sans avoir été touché,
+          l'arbitre ne recommence pas le compte : il le continue « 9-10-OUT ». Quand le boxeur
+          compté est étranger, l'arbitre compte en anglais.
+        </p>
+
+        <h3>Cas particulier — Boxeur hors du ring</h3>
+        <p>
+          Un boxeur tombé hors du ring à la suite de coups réguliers
+          <strong>ne doit pas être aidé</strong> pour regagner le ring, sous peine d'être
+          disqualifié. L'arbitre débute le compte « STOP, 1 », puis :
+        </p>
+        <div class="repos-grid">
+          <div class="repos-cell header">Délai</div>
+          <div class="repos-cell header">Situation</div>
+          <div class="repos-cell dur">10 s</div>
+          <div class="repos-cell">
+            Boxeur sur le plancher débordant du ring. Non regagné → perdant par KO.
+          </div>
+          <div class="repos-cell dur">20 s</div>
+          <div class="repos-cell">
+            Boxeur hors du ring et hors du plancher débordant. Non regagné → perdant par KO ou
+            Abandon, à l'appréciation de l'arbitre.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ 3. GESTUELLE ═══════════════════════════ -->
+    <section class="chapter" id="gestuelle">
+      <div class="container">
+        <div class="chapter-eyebrow">Règles 13-14</div>
+        <h2>Gestuelle Officielle</h2>
+
+        <p>
+          Le rôle et les devoirs précis des juges arbitres relèvent du Manuel des officiels. Le Code
+          sportif fixe les principes suivants pour la communication des fautes, avertissements et
+          décomptes.
+        </p>
+
+        <h3>Commandements en gestes</h3>
+        <div class="geste-grid">
+          <div class="geste-card">
+            <span class="geste-icon">🥊</span>
+            <div class="geste-name">BOX</div>
+            <span class="geste-cmd">Lancer / reprendre</span>
+            <p class="geste-desc">
+              Geste du bras pour démarrer ou relancer le combat après un STOP ou un TIME.
+            </p>
+          </div>
+          <div class="geste-card">
+            <span class="geste-icon">✋</span>
+            <div class="geste-name">STOP</div>
+            <span class="geste-cmd">Arrêt</span>
+            <p class="geste-desc">
+              Arrête le combat. Le boxeur fautif doit regarder l'arbitre, écouter ses observations
+              et acquiescer avant reprise.
+            </p>
+          </div>
+          <div class="geste-card">
+            <span class="geste-icon">✖️</span>
+            <div class="geste-name">BREAK</div>
+            <span class="geste-cmd">Séparation</span>
+            <p class="geste-desc">
+              Les deux boxeurs se séparent d'un pas en arrière, sans frapper, et reprennent sans
+              autre ordre.
+            </p>
+          </div>
+          <div class="geste-card">
+            <span class="geste-icon">🤚</span>
+            <div class="geste-name">TIME</div>
+            <span class="geste-cmd">Pause chrono</span>
+            <p class="geste-desc">
+              Ordonne au chronométreur d'arrêter le chronomètre pour une raison technique ou un
+              incident.
+            </p>
+          </div>
+          <div class="geste-card">
+            <span class="geste-icon">☝️</span>
+            <div class="geste-name">KD COMPTE</div>
+            <span class="geste-cmd">« STOP, 1 » → 8</span>
+            <p class="geste-desc">
+              Décompte sans limite de nombre par reprise ou par combat, à la seule appréciation de
+              l'arbitre.
+            </p>
+          </div>
+          <div class="geste-card">
+            <span class="geste-icon">🙅</span>
+            <div class="geste-name">OUT / KO</div>
+            <span class="geste-cmd">Fin du combat</span>
+            <p class="geste-desc">
+              Prononcé si le boxeur ne peut reprendre au compte de 10, ou immédiatement en cas de KO
+              sévère.
+            </p>
+          </div>
+        </div>
+
+        <h3>Gestuelle des fautes et sanctions</h3>
+        <div class="geste-grid">
+          <div class="geste-card">
+            <span class="geste-icon">🔍</span>
+            <div class="geste-name">Observation</div>
+            <span class="geste-cmd">STOP, sans sanction</span>
+            <p class="geste-desc">
+              L'arbitre indique la faute au boxeur fautif. Aucune sanction n'est délivrée à ce
+              stade.
+            </p>
+          </div>
+          <div class="geste-card">
+            <span class="geste-icon">⚠️</span>
+            <div class="geste-name">Avertissement officiel</div>
+            <span class="geste-cmd">« -1 » sur bulletin</span>
+            <p class="geste-desc">
+              L'adversaire rejoint le coin neutre désigné avant l'annonce aux juges. Annonce
+              publique par le présentateur.
+            </p>
+          </div>
+          <div class="geste-card">
+            <span class="geste-icon">🚩</span>
+            <div class="geste-name">Disqualification</div>
+            <span class="geste-cmd">DISQ</span>
+            <p class="geste-desc">
+              Prononcée à l'appréciation de l'arbitre après une ou plusieurs fautes.
+            </p>
+          </div>
+          <div class="geste-card">
+            <span class="geste-icon">🩹</span>
+            <div class="geste-name">Coup bas</div>
+            <span class="geste-cmd">STOP + geste</span>
+            <p class="geste-desc">
+              Si le coup est intentionnel : avertissement puis BOX. Si non intentionnel et boxeur
+              debout : jusqu'à 5 minutes de récupération.
+            </p>
+          </div>
+        </div>
+
+        <h3>Gestuelle fin de combat</h3>
+        <div class="geste-grid">
+          <div class="geste-card">
+            <span class="geste-icon">🏆</span>
+            <div class="geste-name">Vainqueur</div>
+            <span class="geste-cmd">GP / G KO / G AA…</span>
+            <p class="geste-desc">
+              Tient le poignet de chaque boxeur et lève le bras du vainqueur à l'annonce de la
+              décision.
+            </p>
+          </div>
+          <div class="geste-card">
+            <span class="geste-icon">🤝</span>
+            <div class="geste-name">Match Nul</div>
+            <span class="geste-cmd">MN</span>
+            <p class="geste-desc">
+              Lève les deux bras simultanément. Autorisé uniquement en compétitions officielles,
+              jamais en finale.
+            </p>
+          </div>
+          <div class="geste-card">
+            <span class="geste-icon">🏳️</span>
+            <div class="geste-name">Jet d'éponge</div>
+            <span class="geste-cmd">AB / ABJEP</span>
+            <p class="geste-desc">
+              Seul l'entraîneur titulaire est habilité à jeter l'éponge, et à pénétrer dans les
+              cordes pendant la minute de repos.
+            </p>
+          </div>
+        </div>
+
+        <div class="alerte bleu">
+          <span class="alerte-icon">ℹ️</span>
+          <div class="alerte-text">
+            <strong>Le compte debout n'existe pas</strong>
+            L'arbitre peut compter un boxeur (KD) autant de fois qu'il le juge nécessaire — aucune
+            limite réglementaire, contrairement à la Boxe Amateur.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ 4. JUGEMENT ═══════════════════════════ -->
+    <section class="chapter" id="jugement">
+      <div class="container">
+        <div class="chapter-eyebrow">Règle 16</div>
+        <h2>Jugement des Combats</h2>
+
+        <p>
+          Chaque juge note les deux boxeurs à la fin de chaque reprise sur une note maximale de
+          <strong>10</strong>. Le meilleur boxeur obtient 10. Aucune fraction de point ne peut être
+          accordée. En cas de round à égalité, les deux boxeurs obtiennent 10 — la reprise « nulle »
+          doit être évitée dans la mesure du possible.
+        </p>
+
+        <div class="alerte vert">
+          <span class="alerte-icon">✅</span>
+          <div class="alerte-text">
+            <strong>Critères de jugement</strong>
+            Attaques : puissance, agressivité, précision, coups nets et réguliers. Défense :
+            esquives, parades, façon de rompre le combat. Les coups parés ou bloqués ne sont pas
+            pris en compte — seuls les coups portés régulièrement comptent.
+          </div>
+        </div>
+
+        <h3>Barème des points par reprise</h3>
+        <div class="bareme-row">
+          <div class="bareme-score">
+            <div class="vs">10–10</div>
+            <div class="tag tag-leger">RARE</div>
+          </div>
+          <div class="bareme-body">
+            <strong>Impossibilité de trouver un vainqueur</strong>
+            <p>Cas rare.</p>
+          </div>
+        </div>
+        <div class="bareme-row">
+          <div class="bareme-score">
+            <div class="vs">10–9</div>
+            <div class="tag tag-leger">LÉGER</div>
+          </div>
+          <div class="bareme-body">
+            <strong>Léger ou net avantage</strong>
+            <p>
+              Également attribué lorsque les deux boxeurs subissent le même nombre de KD et que l'un
+              domine la reprise.
+            </p>
+          </div>
+        </div>
+        <div class="bareme-row">
+          <div class="bareme-score">
+            <div class="vs">10–8</div>
+            <div class="tag tag-clair">CLAIR</div>
+          </div>
+          <div class="bareme-body">
+            <strong>Avantage +1 KD, ou avantage très large (limite arrêt) même sans KD</strong>
+          </div>
+        </div>
+        <div class="bareme-row">
+          <div class="bareme-score">
+            <div class="vs">10–7</div>
+            <div class="tag tag-total">TOTAL</div>
+          </div>
+          <div class="bareme-body"><strong>Avantage et deux KD</strong></div>
+        </div>
+        <div class="bareme-row">
+          <div class="bareme-score">
+            <div class="vs">10–6</div>
+            <div class="tag tag-total">TOTAL</div>
+          </div>
+          <div class="bareme-body">
+            <strong>Avantage et trois KD</strong>
+            <p>Jamais plus bas que 10-6, quelle que soit la domination.</p>
+          </div>
+        </div>
+
+        <p>
+          Un KD fait perdre la reprise à celui qui le subit (10-8), sauf si chaque boxeur subit un
+          KD dans le même round — le vainqueur du round obtient alors 10, même s'il a lui-même subi
+          un KD. Un KD est noté « -1 » ; un avertissement est également noté « -1 » sur le bulletin,
+          en case déduction de l'arbitre.
+        </p>
+
+        <h3>Configuration du jury</h3>
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-label">Formule 1</div>
+            <div class="card-title">Arbitre juge unique</div>
+            <p>L'arbitre du combat est également l'unique juge.</p>
+          </div>
+          <div class="card">
+            <div class="card-label">Formule 2</div>
+            <div class="card-title">Arbitre juge + 2 juges</div>
+            <p>L'arbitre juge en plus de diriger le combat.</p>
+          </div>
+          <div class="card">
+            <div class="card-label">Formule 3</div>
+            <div class="card-title">Arbitre + 3 juges</div>
+            <p>L'arbitre ne juge pas dans cette configuration.</p>
+          </div>
+        </div>
+
+        <div class="alerte">
+          <span class="alerte-icon">🚫</span>
+          <div class="alerte-text">
+            <strong>Configuration interdite</strong>
+            Le jugement avec un juge et un arbitre directeur de combat séparés (un seul juge
+            extérieur, sans que l'arbitre ne juge) est interdit.
+          </div>
+        </div>
+
+        <h3>Match nul et préférentiel</h3>
+        <p>
+          Le match nul (MN) est autorisé en compétitions officielles (Challenge Jean-Claude
+          Bouttier, Élites 3, Élites 2), <strong>sauf en finale</strong>. En cas d'égalité
+          nécessitant de désigner un boxeur pour continuer la compétition, l'ordre des critères est
+          : 1) meilleur style, adresse et efficacité technico-tactique ; 2) à défaut, boxeur le
+          moins pénalisé ; 3) à défaut, meilleur fair-play.
+        </p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ 5. SANCTIONS ═══════════════════════════ -->
+    <section class="chapter" id="sanctions">
+      <div class="container">
+        <div class="chapter-eyebrow">Règle 14</div>
+        <h2>Sanctions</h2>
+
+        <p>
+          La gravité de la faute et la sanction sont à <strong>l'appréciation de l'arbitre</strong>.
+          Lorsqu'un boxeur commet une faute, l'arbitre intervient en prononçant « STOP » et indique
+          la faute au boxeur fautif.
+        </p>
+
+        <h3>Échelle des sanctions</h3>
+        <div class="flow">
+          <div class="flow-step">
+            <div class="flow-num">1</div>
+            <div class="flow-content">
+              <strong>Observation — aucune sanction</strong>
+              <p>
+                STOP, l'arbitre indique la faute. Le boxeur doit regarder l'arbitre, écouter,
+                acquiescer de la tête, puis attendre « BOX ».
+              </p>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-num">2</div>
+            <div class="flow-content">
+              <strong>Avertissement officiel — « -1 » sur chaque bulletin</strong>
+              <p>
+                L'adversaire rejoint le coin neutre indiqué par l'arbitre avant que ce dernier
+                n'indique l'avertissement aux juges. Le présentateur doit l'annoncer. Chaque juge
+                entérine obligatoirement la déduction sur son bulletin.
+              </p>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-num">3</div>
+            <div class="flow-content">
+              <strong>Disqualification — DISQ</strong>
+              <p>
+                L'arbitre peut disqualifier un boxeur à la suite d'une ou plusieurs fautes, s'il le
+                juge nécessaire — pas de seuil fixe de nombre d'avertissements.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="alerte">
+          <span class="alerte-icon">🔁</span>
+          <div class="alerte-text">
+            <strong>Pas de seuil automatique de disqualification</strong>
+            Contrairement à la Boxe Amateur (DSQ au 3e avertissement), l'arbitre pro dispose d'un
+            pouvoir d'appréciation total : il peut disqualifier ou multiplier les avertissements,
+            dans la reprise comme dans le combat.
+          </div>
+        </div>
+
+        <h3>Fautes interdites — Règle 13</h3>
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-label">Zones interdites</div>
+            <div class="card-title">Zones de frappe</div>
+            <p>
+              En dessous de la ceinture, dans le dos, derrière la tête. Frapper un adversaire à
+              terre. Les coups portés sur les membres supérieurs de l'adversaire ne sont pas
+              comptabilisés.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-label">Techniques illégales</div>
+            <div class="card-title">Gestes interdits</div>
+            <p>
+              Tenir, tirer, serrer, pousser ou s'appuyer sur l'adversaire. Passer le(s) bras sous
+              les siens. Utiliser les cordes pour frapper, parer, esquiver ou se déplacer.
+              Croche-pied.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-label">Comportements</div>
+            <div class="card-title">Conduites</div>
+            <p>
+              Se tourner (présenter le dos), ne pas faire face à l'adversaire pendant la minute de
+              repos, parler ou crier en boxant, rejeter volontairement le protège-dents, simuler la
+              réception d'un coup irrégulier, être incorrect envers un officiel, substance dopante
+              ou tout autre produit que l'eau.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-label">Timing</div>
+            <div class="card-title">Moments interdits</div>
+            <p>
+              Frapper après un « STOP ». Frapper sur un « BREAK » avant d'avoir déplacé les deux
+              appuis vers l'arrière. Attaquer/parer/esquiver tête en avant. Abaisser la tête sous la
+              ceinture de l'adversaire. Empêcher l'adversaire de boxer bras tendu.
+            </p>
+          </div>
+        </div>
+
+        <h3>Cas particulier — Coup bas</h3>
+        <div class="decision-block bleu">
+          <p class="decision-title">Coup intentionnel</p>
+          <p>
+            → <strong>Avertissement</strong> au boxeur fautif, puis « BOX ». Si le boxeur touché ne
+            reprend pas au commandement de l'arbitre : déclaré <strong>perdant par abandon</strong>.
+          </p>
+        </div>
+        <div class="decision-block">
+          <p class="decision-title">Coup non intentionnel, boxeur debout</p>
+          <p>
+            → Temps de récupération <strong>maximum de 5 minutes</strong>. Passé ce délai, s'il ne
+            reprend pas : déclaré <strong>perdant par abandon</strong>.
+          </p>
+        </div>
+
+        <h3>Cas particulier — Protège-dents</h3>
+        <div class="decision-block">
+          <p class="decision-title">Rejet volontaire, sans coup reçu</p>
+          <p>
+            → <strong>Observation</strong> les 1re et 2e fois. À partir du
+            <strong>3e rejet : avertissement</strong>.
+          </p>
+        </div>
+        <div class="decision-block vert">
+          <p class="decision-title">Perte suite à un coup ou une série de coups</p>
+          <p>
+            → <strong>Observation.</strong> L'arbitre fait changer le protège-dents si besoin.
+            Chaque boxeur dispose de deux protège-dents dont un de rechange.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ 6. DÉCISIONS ═══════════════════════════ -->
+    <section class="chapter" id="decisions">
+      <div class="container">
+        <div class="chapter-eyebrow">Règle 15</div>
+        <h2>Décisions</h2>
+
+        <p>
+          Un combat peut se terminer avant la limite ou dans la limite du temps imparti. Les
+          décisions avant la limite sont soumises à la
+          <strong>seule appréciation de l'arbitre</strong>, seule personne compétente pour prononcer
+          l'arrêt du combat.
+        </p>
+
+        <h3>Décisions aux points</h3>
+        <div class="decision-block vert">
+          <div class="decision-sigle g">GP</div>
+          <div class="decision-title">Gagnant aux points — PP perdant, MN match nul</div>
+          <p>
+            Rendue à la majorité des juges, après application des critères de jugement de la Règle
+            16.
+          </p>
+        </div>
+
+        <h3>Arrêt de l'arbitre (AA)</h3>
+        <div class="decision-block">
+          <div class="decision-sigle g">G AA n</div>
+          <div class="decision-title">Infériorité manifeste</div>
+          <p>
+            Boxeur surclassé risquant une défaite trop sévère : perdant P AA n (n = numéro du
+            round).
+          </p>
+        </div>
+        <div class="decision-block bleu">
+          <div class="decision-sigle p">G AABL n / P AABL n</div>
+          <div class="decision-title">Blessure sur coup régulier ou sans coup adverse</div>
+          <p>
+            Le boxeur blessé est déclaré perdant quelle que soit la reprise, dès lors que le combat
+            doit être arrêté.
+          </p>
+        </div>
+        <div class="decision-block">
+          <div class="decision-sigle p">MNT</div>
+          <div class="decision-title">
+            Blessures simultanées des deux boxeurs (avant la mi-combat)
+          </div>
+          <p>
+            Avant la fin de la 2e reprise (4×3, 6×3) ou de la 4e reprise (8×3, 10×3) : « Match Nul
+            Technique ». Après ce seuil, décision aux points selon le pointage au moment de l'arrêt.
+          </p>
+        </div>
+
+        <h3>Décisions sur KO</h3>
+        <div class="decision-block">
+          <div class="decision-sigle g">G KO n</div>
+          <div class="decision-title">Compte atteint 10 / KO sévère / simulacre</div>
+          <p>
+            Boxeur inapte à reprendre au compte de 10. Simulacre de KO → boxeur disqualifié (mais
+            décision inscrite G KO / P KO). KO simultané des deux boxeurs (coups réguliers) → les
+            deux inscrits <strong>P KO</strong>.
+          </p>
+        </div>
+
+        <h3>Disqualifications (DISQ)</h3>
+        <div class="decision-block">
+          <div class="decision-sigle p">G DISQ n / P DISQ n</div>
+          <div class="decision-title">À l'appréciation de l'arbitre</div>
+          <p>
+            Pas de seuil fixe d'avertissements. Double disqualification possible : les deux boxeurs
+            inscrits <strong>P DISQ</strong>, aucun vainqueur.
+          </p>
+        </div>
+        <div class="decision-block">
+          <div class="decision-sigle p">G DISQ n / P DISQ n</div>
+          <div class="decision-title">Blessure sur coup irrégulier</div>
+          <p>
+            Volontaire : avertissement si le blessé peut continuer. Involontaire : l'arbitre indique
+            au délégué le caractère non-volontaire ; avertissement possible au fautif.
+          </p>
+        </div>
+
+        <h3>Abandons (AB) et jet d'éponge (ABJEP)</h3>
+        <div class="decision-block vert">
+          <div class="decision-sigle g">G AB n / P AB n</div>
+          <div class="decision-title">Abandon du boxeur</div>
+          <p>
+            Signe à l'arbitre, ou ne reprend pas le combat à l'appel de la reprise, ou refuse de
+            continuer après avis du médecin sur blessure.
+          </p>
+        </div>
+        <div class="decision-block vert">
+          <div class="decision-sigle g">G ABJEP n / P ABJEP n</div>
+          <div class="decision-title">Jet d'éponge</div>
+          <p>
+            Seul l'entraîneur titulaire peut jeter l'éponge. Si jetée pendant un compte : l'arbitre
+            poursuit jusqu'à 8 ou 10 si nécessaire, et la décision peut devenir AA, AABL ou KO selon
+            le cas.
+          </p>
+        </div>
+
+        <div class="alerte">
+          <span class="alerte-icon">📋</span>
+          <div class="alerte-text">
+            <strong>Sigles à inscrire par le délégué fédéral</strong>
+            Sur le livret du boxeur et le procès-verbal de réunion, avec le numéro (n) de la reprise
+            où l'arrêt s'est produit. Dans tous les cas, le délégué mentionne le nombre de jours
+            d'arrêt donné par le médecin.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ 7. DURÉE & REPOS ═══════════════════════════ -->
+    <section class="chapter" id="repos">
+      <div class="container">
+        <div class="chapter-eyebrow">Règle 10</div>
+        <h2>Délais de Repos</h2>
+
+        <p>
+          Le terme « repos » signifie l'interdiction de boxer en compétition et d'effectuer des
+          exercices en opposition à l'entraînement. Ces délais s'appliquent pour tout type de combat
+          : compétitions ou hors compétition, nationales ou internationales.
+        </p>
+
+        <div class="alerte">
+          <span class="alerte-icon">🚨</span>
+          <div class="alerte-text">
+            <strong>Examen médical immédiat obligatoire</strong>
+            Tout boxeur KO doit être examiné par le médecin de ring dans les secondes qui suivent la
+            décision.
+          </div>
+        </div>
+
+        <div class="repos-grid">
+          <div class="repos-cell header">Durée</div>
+          <div class="repos-cell header">Situation</div>
+
+          <div class="repos-cell dur">5 J</div>
+          <div class="repos-cell">
+            Victoire ou défaite, aux points ou avant la limite, sur 4 ou 6 rounds.
+          </div>
+
+          <div class="repos-cell dur">10 J</div>
+          <div class="repos-cell">
+            Victoire ou défaite, aux points ou avant la limite, sur 8, 10 ou 12 rounds.
+          </div>
+
+          <div class="repos-cell dur">20 J</div>
+          <div class="repos-cell">
+            Défaite avant la limite (y compris par disqualification), toute distance. Ou décision
+            aux points sur blessure — même si le boxeur blessé est vainqueur.
+          </div>
+
+          <div class="repos-cell dur">28 J</div>
+          <div class="repos-cell">Défaite avant la limite par KO.</div>
+
+          <div class="repos-cell dur">90 J</div>
+          <div class="repos-cell">
+            Deux KO consécutifs dans un délai de 90 jours, à compter du deuxième KO.
+          </div>
+
+          <div class="repos-cell dur">360 J</div>
+          <div class="repos-cell">
+            Trois KO, consécutifs ou non, en 360 jours. Retour possible uniquement après
+            autorisation FF Boxe à la suite de tests médicaux imposés par la commission fédérale
+            médicale.
+          </div>
+        </div>
+
+        <div class="alerte or">
+          <span class="alerte-icon">🆕</span>
+          <div class="alerte-text">
+            <strong>Le médecin peut toujours exiger un repos supérieur</strong>
+            Sur chacune de ces lignes, s'il le juge utile, le médecin de réunion peut exiger un
+            repos supérieur au délai prévu au règlement — même pour le boxeur vainqueur —
+            éventuellement assorti d'un bilan neurologique. Ce repos imposé doit être mentionné sur
+            le livret du boxeur et le procès-verbal de réunion par le délégué fédéral.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ 8. TENUE ═══════════════════════════ -->
+    <section class="chapter" id="tenue">
+      <div class="container">
+        <div class="chapter-eyebrow">Règle 11</div>
+        <h2>Tenue des Boxeurs</h2>
+
+        <div class="alerte or">
+          <span class="alerte-icon">🥊</span>
+          <div class="alerte-text">
+            <strong>Pas de casque en Boxe Professionnelle</strong>
+            Contrairement à la Boxe Amateur, aucun casque n'est prévu par le règlement, à aucune
+            catégorie.
+          </div>
+        </div>
+
+        <h3>Équipement obligatoire</h3>
+        <div class="tenue-grid">
+          <div class="tenue-item">
+            <span class="tenue-emoji">🥊</span>
+            <div class="tenue-text">
+              <strong>Gants</strong>
+              <span
+                >Gants à lacets exclusivement (nœud noué au-dessus du poignet). Hommes : 8 onces
+                jusqu'à Mi-Moyens inclus, 10 onces à partir de Super Mi-Moyens. Femmes : 8 onces
+                jusqu'à Plume inclus, 10 onces à partir de Super-Plume. En cas de rencontre à cheval
+                sur ce seuil : 10 onces pour les deux. Quatre paires homologuées, même
+                marque/structure, fournies par l'organisateur ; deux tenues en réserve à la table
+                des officiels.</span
+              >
+            </div>
+          </div>
+          <div class="tenue-item">
+            <span class="tenue-emoji">🩱</span>
+            <div class="tenue-text">
+              <strong>Tenue</strong>
+              <span
+                >Short ne descendant pas sous le niveau des genoux. Chaussures de sport. Chaussettes
+                ne cachant pas les genoux.</span
+              >
+            </div>
+          </div>
+          <div class="tenue-item">
+            <span class="tenue-emoji">🦷</span>
+            <div class="tenue-text">
+              <strong>Protège-dents</strong>
+              <span
+                >Deux protège-dents obligatoires, dont un de rechange en cas de perte du
+                premier.</span
+              >
+            </div>
+          </div>
+          <div class="tenue-item">
+            <span class="tenue-emoji">💇</span>
+            <div class="tenue-text">
+              <strong>Cheveux</strong>
+              <span>Les cheveux longs doivent être maintenus par un objet non rigide.</span>
+            </div>
+          </div>
+          <div class="tenue-item">
+            <span class="tenue-emoji">🤜</span>
+            <div class="tenue-text">
+              <strong>Bandages</strong>
+              <span
+                >Bandes de gaze souples de toute longueur, + tissu adhésif découpé en bandelettes
+                appliquées à plat sur la face dorsale de la main (sans dépasser la tête des
+                métacarpiens), appliqué au-dessus du bandage — jamais directement sur la peau. Ni
+                mouillés ni roulés à l'intérieur de la main. Vérifiés et signés par un juge arbitre
+                avant la mise des gants.</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <h3>Hommes — Dispositions particulières</h3>
+        <p>
+          Coquille ou ceinture protectrice <strong>obligatoire</strong> (ne dépasse pas le short).
+        </p>
+
+        <h3>Femmes — Dispositions particulières</h3>
+        <p>
+          Coquille/ceinture protectrice et protection mammaire conseillées mais non obligatoires.
+          Attestation sur l'honneur de non-grossesse exigée par le médecin.
+        </p>
+
+        <h3>Interdictions générales</h3>
+        <p>
+          Lunettes, lentilles de contact, bijoux, piercing, bracelets, bagues et colliers interdits.
+        </p>
+
+        <div class="alerte bleu">
+          <span class="alerte-icon">💧</span>
+          <div class="alerte-text">
+            <strong>Vaseline autorisée pour tous</strong>
+            Contrairement à la Boxe Amateur (réservée aux boxeurs sans casque), une fine couche de
+            vaseline sur le visage et le corps est autorisée pour tous les boxeurs pro — l'absence
+            de casque rend la distinction sans objet. La quantité reste à l'appréciation de
+            l'arbitre. Application de toute autre substance interdite.
+          </div>
+        </div>
+
+        <div class="alerte">
+          <span class="alerte-icon">📢</span>
+          <div class="alerte-text">
+            <strong>Publicité encadrée</strong>
+            Autorisée sur la tenue des boxeurs, à l'exception des publicités liées au tabac et à
+            l'alcool.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+    <footer class="footer">
+      <div class="container">
+        <p><strong>Livret du Juge Arbitre — Boxe Professionnelle</strong></p>
+        <p>
+          Basé sur le <strong>Code Sportif de la Boxe Professionnelle FFBoxe</strong>, règlement
+          applicable à compter du <strong>1er janvier 2026</strong>.
+        </p>
+        <p style="margin-top: 12px">
+          Ce document est un outil de référence officieux. Se référer au Code Sportif officiel et au
+          Manuel des Officiels FFBoxe / Ligue Nationale de Boxe Professionnelle pour toute décision
+          disciplinaire.
+        </p>
+        <p style="margin-top: 16px; color: var(--gris-light)">Comité Régional Occitanie Boxe</p>
+      </div>
+    </footer>
+  </body>
+</html>
