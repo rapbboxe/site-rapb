@@ -126,6 +126,54 @@ if (!usefulDocuments) {
   setText('#documents-description', usefulDocuments.paragraphes[0]);
 
   usefulDocuments.liens.forEach((documentLink) => {
+    const resolveUrl = (item) =>
+      item.reference
+        ? item.reference.split('.').reduce((value, key) => value[key], content)
+        : item.url;
+
+    if (documentLink.type === 'menu') {
+      const details = document.createElement('details');
+      const summary = document.createElement('summary');
+      const submenu = document.createElement('div');
+
+      details.className = 'useful-document-group';
+      summary.className = 'useful-document-summary';
+      submenu.className = 'useful-document-submenu';
+      summary.textContent = documentLink.libelle;
+
+      documentLink.liens.forEach((item) => {
+        const link = document.createElement('a');
+
+        link.href = resolveUrl(item);
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        link.textContent = item.libelle;
+
+        submenu.append(link);
+      });
+
+      details.append(summary, submenu);
+      q('#documents-links').append(details);
+      return;
+    }
+
+    const link = document.createElement('a');
+    const arrow = document.createElement('span');
+
+    link.className = 'useful-document-link';
+    link.href = resolveUrl(documentLink);
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.textContent = documentLink.libelle;
+
+    arrow.setAttribute('aria-hidden', 'true');
+    arrow.textContent = '↗';
+
+    link.append(arrow);
+    q('#documents-links').append(link);
+  });
+  /*
+  usefulDocuments.liens.forEach((documentLink) => {
     const link = document.createElement('a');
     const url = documentLink.reference
       ? documentLink.reference.split('.').reduce((value, key) => value[key], content)
@@ -144,6 +192,7 @@ if (!usefulDocuments) {
     link.append(arrow);
     q('#documents-links').append(link);
   });
+ */
 }
 
 setText('#access-kicker', content.sectionAcces.surtitre);

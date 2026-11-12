@@ -271,21 +271,37 @@
       {
         "id": "documents",
         "titre": "Les documents utiles",
-        "paragraphes": [
-          "Retrouvez les formulaires médicaux de la saison en cours sur le site de la FFBoxe. Choisissez celui qui correspond à votre pratique et faites-le compléter par votre médecin."
-        ],
+        "paragraphes": ["Retrouvez les certificats médicaux, les règlements, etc"],
         "liens": [
           {
-            "libelle": "Certificats médicaux : loisir et compétition",
+            "libelle": "Certificats médicaux",
             "url": "https://www.ffboxe.com/certificat-medical/"
           },
           {
-            "libelle": "Charte du club",
+            "libelle": "Charte du club!",
             "reference": "documents.charte.url"
           },
           {
             "libelle": "Règlements et codes sportifs FFBOXE",
             "url": "https://www.ffboxe.com/pratiquer/reglements-code-sportif/"
+          },
+          {
+            "type": "menu",
+            "libelle": "Arbitrage / jugement",
+            "liens": [
+              {
+                "libelle": "Boxe Educative — Livret du juge-arbitre",
+                "url": "./documents/livret-juge-arbitre-BEA-2026-2067.html"
+              },
+              {
+                "libelle": "Boxe Amateur — Livret du juge-arbitre",
+                "url": "./documents/livret-juge-arbitre-BOXE-AMATEUR_2026-2027.html"
+              },
+              {
+                "libelle": "Boxe PRO — Livret du juge-arbitre",
+                "url": "./documents/livret-juge-arbitre-BOXE-PRO-2026-2027.html"
+              }
+            ]
           }
         ]
       },

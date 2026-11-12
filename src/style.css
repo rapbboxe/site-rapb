@@ -367,6 +367,31 @@ h2 {
 .useful-document-link:hover span {
   color: #fff;
 }
+
+.useful-document-link:has(> summary) {
+  display: block;
+}
+
+.useful-document-link > summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.useful-document-link > summary::-webkit-details-marker {
+  display: none;
+}
+
+.useful-document-submenu {
+  display: grid;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.useful-document-submenu a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 .steps {
   list-style: none;
   margin: 0;
