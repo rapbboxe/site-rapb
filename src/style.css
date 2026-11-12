@@ -337,7 +337,13 @@ h2 {
   grid-template-columns: repeat(3, 1fr);
   border-top: 1px solid #444;
 }
-.useful-document-link {
+
+#documents-links > :nth-child(3n + 1) {
+  border-left: 1px solid #444;
+}
+
+.useful-document-link,
+.useful-document-group {
   min-height: 150px;
   padding: 30px;
   border-right: 1px solid #444;
@@ -353,10 +359,12 @@ h2 {
     background 0.2s ease,
     color 0.2s ease;
 }
-.useful-document-link:first-child {
+.useful-document-link:first-child,
+.useful-document-group:first-child {
   border-left: 1px solid #444;
 }
-.useful-document-link:hover {
+.useful-document-link:hover,
+.useful-document-group:hover {
   background: var(--red);
 }
 .useful-document-link span {
@@ -364,20 +372,37 @@ h2 {
   color: var(--red);
   font-size: 24px;
 }
-.useful-document-link:hover span {
+.useful-document-link:hover span,
+.useful-document-group:hover > summary::after {
   color: #fff;
 }
 
-.useful-document-link:has(> summary) {
+.useful-document-group {
   display: block;
 }
 
-.useful-document-link > summary {
+.useful-document-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
   cursor: pointer;
   list-style: none;
 }
 
-.useful-document-link > summary::-webkit-details-marker {
+.useful-document-summary::after {
+  content: '+';
+  flex: none;
+  color: var(--red);
+  font-size: 24px;
+  line-height: 1;
+}
+
+.useful-document-group[open] > .useful-document-summary::after {
+  content: '−';
+}
+
+.useful-document-summary::-webkit-details-marker {
   display: none;
 }
 
@@ -627,12 +652,23 @@ footer p {
   .useful-documents-links {
     grid-template-columns: 1fr;
   }
+
+  #documents-links > :nth-child(3n + 1) {
+    border-left: 0;
+  }
+
   .useful-document-link,
-  .useful-document-link:first-child {
+  .useful-document-group,
+  .useful-document-link:first-child,
+  .useful-document-group:first-child,
+  .useful-document-summary {
     min-height: 110px;
     padding: 24px 0;
     border-left: 0;
     border-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   .access-copy {
     order: -1;
