@@ -136,7 +136,7 @@ if (!usefulDocuments) {
       const summary = document.createElement('summary');
       const submenu = document.createElement('div');
 
-      details.className = 'useful-document-group';
+      details.className = 'useful-document-link';
       summary.className = 'useful-document-summary';
       submenu.className = 'useful-document-submenu';
       summary.textContent = documentLink.libelle;
