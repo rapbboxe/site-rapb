@@ -342,6 +342,21 @@ h2 {
   border-left: 1px solid #444;
 }
 
+.useful-document-link:has(> summary) {
+  min-height: 150px;
+  padding: 0;
+}
+
+.useful-document-link > summary {
+  min-height: 150px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  box-sizing: border-box;
+}
+
 .useful-document-link,
 .useful-document-group {
   min-height: 150px;
@@ -655,6 +670,15 @@ footer p {
 
   #documents-links > :nth-child(3n + 1) {
     border-left: 0;
+  }
+
+  .useful-document-link:has(> summary) {
+    min-height: 110px;
+  }
+
+  .useful-document-link > summary {
+    min-height: 110px;
+    padding: 24px 0;
   }
 
   .useful-document-link,
