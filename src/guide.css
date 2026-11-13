@@ -276,3 +276,42 @@ html {
     scroll-behavior: auto;
   }
 }
+
+.guide-document-menu {
+  flex: 0 1 auto;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.guide-document-summary {
+  width: 100%;
+  justify-content: space-between;
+  cursor: pointer;
+  list-style: none;
+}
+
+.guide-document-summary::-webkit-details-marker {
+  display: none;
+}
+
+.guide-document-summary::after {
+  content: '+';
+  margin-left: 1rem;
+}
+
+.guide-document-menu[open] .guide-document-summary::after {
+  content: '−';
+}
+
+.guide-document-submenu {
+  display: grid;
+  gap: 0.5rem;
+  padding: 0.5rem 0.85rem 0.85rem;
+}
+
+.guide-document-submenu-link {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  font-weight: 700;
+}

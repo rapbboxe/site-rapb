@@ -22,10 +22,28 @@ export function renderGuide(content) {
     if (typeof url !== 'string' || !/^(https?:\/\/|\.\/|#)/.test(url)) {
       throw new Error(`Invalid guide URL: ${url}`);
     }
-    const targetAttributes = /^https?:\/\//.test(url)
-      ? ' target="_blank" rel="noopener noreferrer"'
-      : '';
+    const targetAttributes = ' target="_blank" rel="noopener noreferrer"';
+
     return `<a class="${className}" href="${text(url)}"${targetAttributes}>${text(link.libelle)}</a>`;
+  }
+
+  function renderDocumentLink(link) {
+    if (link.type !== 'menu') {
+      return renderLink(link);
+    }
+
+    return `
+    <details class="guide-document-menu">
+      <summary class="guide-link guide-document-summary">
+        ${text(link.libelle)}
+      </summary>
+      <div class="guide-document-submenu">
+        ${(link.liens || [])
+          .map((item) => renderLink(item, 'guide-document-submenu-link'))
+          .join('\n')}
+      </div>
+    </details>
+  `;
   }
 
   function renderDetails(item) {
@@ -42,7 +60,7 @@ export function renderGuide(content) {
         })
         .join('\n')}
       ${item.liste ? `<ul>${item.liste.map((entry) => `<li>${text(entry)}</li>`).join('\n')}</ul>` : ''}
-      ${item.liens ? `<div class="guide-links">${item.liens.map((link) => renderLink(link)).join('\n')}</div>` : ''}
+      ${item.liens ? `<div class="guide-links">${item.liens.map(renderDocumentLink).join('\n')}</div>` : ''}
       ${item.note ? `<p class="guide-note">${text(item.note)}</p>` : ''}
     `;
   }

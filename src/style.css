@@ -337,7 +337,13 @@ h2 {
   grid-template-columns: repeat(3, 1fr);
   border-top: 1px solid #444;
 }
-.useful-document-link {
+
+#documents-links > :nth-child(3n + 1) {
+  border-left: 1px solid #444;
+}
+
+.useful-document-link,
+.useful-document-group {
   min-height: 150px;
   padding: 30px;
   border-right: 1px solid #444;
@@ -353,10 +359,12 @@ h2 {
     background 0.2s ease,
     color 0.2s ease;
 }
-.useful-document-link:first-child {
+.useful-document-link:first-child,
+.useful-document-group:first-child {
   border-left: 1px solid #444;
 }
-.useful-document-link:hover {
+.useful-document-link:hover,
+.useful-document-group:hover {
   background: var(--red);
 }
 .useful-document-link span {
@@ -364,9 +372,61 @@ h2 {
   color: var(--red);
   font-size: 24px;
 }
-.useful-document-link:hover span {
+.useful-document-link:hover span,
+.useful-document-link:hover > .useful-document-summary::after,
+.useful-document-group:hover > summary::after {
   color: #fff;
 }
+
+/* The details element supplies the grid cell; its summary is the full clickable card. */
+.useful-document-link:has(> .useful-document-summary) {
+  display: block;
+  min-height: 0;
+  padding: 0;
+}
+
+.useful-document-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 150px;
+  padding: 30px;
+  box-sizing: border-box;
+  gap: 24px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.useful-document-summary::after {
+  content: '+';
+  flex: none;
+  margin-left: auto;
+  color: var(--red);
+  font-size: 24px;
+  line-height: 1;
+}
+
+.useful-document-link[open] > .useful-document-summary::after,
+.useful-document-group[open] > .useful-document-summary::after {
+  content: '−';
+}
+
+.useful-document-summary::-webkit-details-marker {
+  display: none;
+}
+
+.useful-document-submenu {
+  display: grid;
+  gap: 12px;
+  margin: 0 30px 30px;
+}
+
+.useful-document-submenu a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 .steps {
   list-style: none;
   margin: 0;
@@ -602,12 +662,33 @@ footer p {
   .useful-documents-links {
     grid-template-columns: 1fr;
   }
+
+  #documents-links > :nth-child(3n + 1) {
+    border-left: 0;
+  }
+
   .useful-document-link,
-  .useful-document-link:first-child {
+  .useful-document-group,
+  .useful-document-link:first-child,
+  .useful-document-group:first-child {
     min-height: 110px;
     padding: 24px 0;
     border-left: 0;
     border-right: 0;
+  }
+
+  .useful-document-link:has(> .useful-document-summary) {
+    min-height: 0;
+    padding: 0;
+  }
+
+  .useful-document-summary {
+    min-height: 110px;
+    padding: 24px 0;
+  }
+
+  .useful-document-submenu {
+    margin: 0 0 24px;
   }
   .access-copy {
     order: -1;
