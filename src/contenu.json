@@ -104,7 +104,7 @@
     "bouton": "S’inscrire"
   },
   "sectionDocumentsAccueil": {
-    "surtitre": "Préparer son dossier"
+    "surtitre": ""
   },
   "tarifs": [
     {
@@ -278,12 +278,16 @@
             "url": "https://www.ffboxe.com/certificat-medical/"
           },
           {
-            "libelle": "Charte du club!",
+            "libelle": "Charte du club",
             "reference": "documents.charte.url"
           },
           {
             "libelle": "Règlements et codes sportifs FFBOXE",
             "url": "https://www.ffboxe.com/pratiquer/reglements-code-sportif/"
+          },
+          {
+            "libelle": "Catégorie de poids amateur",
+            "url": "./documents/poids-am-26-27.png"
           },
           {
             "type": "menu",
